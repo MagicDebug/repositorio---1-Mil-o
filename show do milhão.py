@@ -23,43 +23,66 @@ print (input(" 🎤 Vamos dar inicio: \n Primeiro Tema: Noticia e Reportagem \n 
 # AQUI È  PRIMERIA PERGUNTA
 
 def RESPOSTAS_PERGUNTA_1 (pergunta_1_resposta):
+    
+    # VARIAVEIS GLOBAL PARA AS AJUDAS
+    global Ajuda_plateia
+    global Ajuda_Universitarios
 
-    pergunta_1_resposta = (input(" 🎤 PERGUNTA 1️: O que é uma noticia:❔ \n\n 🎤 Alternativa (A) Um texto Teatral \n 🎤 Alternativa (B) Um texto que informa fatos \n 🎤 Alternativa (C) Uma poesia \n 🎤 Alternativa (D) Uma receita \n 🎤 Alternativa (E) Um conto ficticio \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] \n\n | ENTER | \n\n 👤 "))
+    while True:
+        pergunta_1_resposta = (input(" 🎤 PERGUNTA 1️: O que é uma noticia:❔ \n\n 🎤 Alternativa (A) Um texto Teatral \n 🎤 Alternativa (B) Um texto que informa fatos \n 🎤 Alternativa (C) Uma poesia \n 🎤 Alternativa (D) Uma receita \n 🎤 Alternativa (E) Um conto ficticio \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
-    # ALTERNATIVA A (❌ ERRADA ❌) 
+        # ALTERNATIVA DE AJUDA: 🥸PLATEIA🥸(P)
+        if pergunta_1_resposta == "P":
+            if Ajuda_plateia > 0:
+                Ajuda_plateia -= 1
+                
+                print (input("\n 🎤 Você pediu a ajuda da Plateia: \n Eles não tem certeza de qual seja a certa então boa sorte! \n\n | ENTER | "))
+                print (" 🥸  É Alternativa (B)! \n 🥸  Claro que é (B)! \n 🥸  Obvio que é (D)! \n\n")
+                print (input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n diga qual é a alternativa correta \n\n | ENTER PARA VER NOVAMENTE AS RESPOSTAS | \n"))
 
-    if pergunta_1_resposta == "A":
-        print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Um texto Teatral), sua resposta está eee... \n\n | ENTER | "))
-        print (input(" 🎤 ❌ errada ❌ \n Você não ganhou nada  💵 0,00!!! 🫵  😂 \n\n | ENTER | \n"))
+        # ALTERNATIVA DE AJUDA: 🎓UNIVERSITÁRIOS🎓 (U)
+        
+        elif pergunta_1_resposta == "U":
+            if Ajuda_Universitarios > 0:
+                Ajuda_Universitarios -= 1
+                
+                print (input("\n 🎤 Você pediu a ajuda dos Universitários: \n Veja o que eles dirão \n\n | ENTER | "))
+                print (" 🎓  Temos certeza de que todas estão erradas \n Menos a alternativa (B) \n\n ")
+                print (input(" 🎤 " + nome_usuario + ", Após receber a ajuda dos Universitários: \n diga qual é a alternativa correta \n\n | ENTER PARA VER NOVAMENTE AS RESPOSTAS | \n"))
+
+        # ALTERNATIVA A (❌ ERRADA ❌)
+        #  
+        elif pergunta_1_resposta == "A":
+            print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Um texto Teatral), sua resposta está eee... \n\n | ENTER | "))
+            print (input(" 🎤 ❌ errada ❌ \n Você não ganhou nada  💵 0,00!!! 🫵  😂 \n\n | ENTER | \n"))
+            break
 
         # ALTERNATIVA B (✅ CORRETA ✅)
 
-    elif pergunta_1_resposta == "B":
-        print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Um texto que informa fatos), sua resposta está eee... \n\n | ENTER | "))
-        print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 200,00!!! \n\n | ENTER | \n"))
+        elif pergunta_1_resposta == "B":
+            print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Um texto que informa fatos), sua resposta está eee... \n\n | ENTER | "))
+            print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 200,00!!! \n\n | ENTER | \n"))
+            break
 
         # ALTERNATIVA C (❌ ERRADA ❌)
 
-    elif pergunta_1_resposta == "C":
-        print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Uma poesia), sua resposta está eee... \n\n | ENTER | "))
-        print (input(" 🎤 ❌ errada ❌ \n Você não ganhou nada  💵 0,00!!! 🫵  😂 \n\n | ENTER | \n"))
+        elif pergunta_1_resposta == "C":
+            print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Uma poesia), sua resposta está eee... \n\n | ENTER | "))
+            print (input(" 🎤 ❌ errada ❌ \n Você não ganhou nada  💵 0,00!!! 🫵  😂 \n\n | ENTER | \n"))
+            break
 
         # ALTERNATIVA D (❌ ERRADA ❌)
 
-    elif pergunta_1_resposta == "D":
-        print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Uma receita), sua resposta está eee... \n\n | ENTER | "))
-        print (input(" 🎤 ❌ errada ❌ \n Você não ganhou nada  💵 0,00!!! 🫵  😂 \n\n | ENTER | \n"))
+        elif pergunta_1_resposta == "D":
+            print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Uma receita), sua resposta está eee... \n\n | ENTER | "))
+            print (input(" 🎤 ❌ errada ❌ \n Você não ganhou nada  💵 0,00!!! 🫵  😂 \n\n | ENTER | \n"))
+            break
 
         # ALTERNATIVA E (❌ ERRADA ❌)
 
-    elif pergunta_1_resposta == "E":
-        print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Um conto ficticio), sua resposta está eee... \n\n | ENTER | "))
-        print (input(" 🎤 ❌ errada ❌ \n Você não ganhou nada  💵 0,00!!! 🫵  😂 \n\n | ENTER | \n"))
-
-        # ALTERNATIVA P (🥸 PLATEIA)
-
-    elif pergunta_1_resposta == "P":
-        plateia = (input(""))
-
+        elif pergunta_1_resposta == "E":
+            print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Um conto ficticio), sua resposta está eee... \n\n | ENTER | "))
+            print (input(" 🎤 ❌ errada ❌ \n Você não ganhou nada  💵 0,00!!! 🫵  😂 \n\n | ENTER | \n"))
+            break
 
 RESPOSTAS_PERGUNTA_1(pergunta_1_resposta = "")
