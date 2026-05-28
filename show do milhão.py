@@ -1,10 +1,13 @@
-# AQUI É A INTRODUÇÂO PAPO RETO TA LIGADO PARÇA
+# AQUI É A INTRODUÇÂO DO JOGO COM O TITULO
 
 print (input("\n\n 💰!!! O SHOW DO MILHÃO !!!💰  | ENTER |"))
+
+# AQUI É AONDE O APRESENTADOR/MAQUINA QUE SE IDENTIFICA PELO MICROFONE (🎤) DA AS BOAS VINDAS AO USUÁRIO E PEDE PARA ELE SE APRESENTAR, USUARIO SENDO (👤)
+
 print ("\n 🎤 Seja Bem Vindo ao Show Do Milhão! ")
 nome_usuario = (input(" Vamos dar inicio ao Grande Show, Por Favor Se Apresente nos dizendo seu nome de usuario | DIGITE SEU NOME | ENTER | \n\n 👤 "))
 
-# AQUI ESTA AS EXPLICAÇÕES DE COMO SÂO AS REGRAS DO JOGO MER'MÃO
+# AQUI ESTA AS EXPLICAÇÕES DE COMO SÂO AS REGRAS DO JOGO, SOBRE O VALOR DAS PERGUNTAS, AS AJUDAS E O OBJETIVO DO JOGO QUE É CHEGAR AO 1 MILHÃO
 
 print (input("\n 🎤 " + nome_usuario + ", as Instruções do Jogo são as seguintes: \n  O Show será baseado na matéria de PORTUGUÊS e dividido em 5 temas do 😂 Mais Facil até o, 🤬 Mais Dificil, contendo 25 perguntas divididas para os diferentes 5 temas, podendo ter a ajuda dá; \n\n 🥸  Plateia 3 vezes \n 🎓 Universitarios 5 vezes \n\n  | ENTER | \n"))
 
@@ -12,10 +15,8 @@ print (input(" 🎤 Cada pergunta vale 💵 200,00 \n  A cada acerto o valor da 
 
 print (input("\n 🎤 Seu Unico Objetivo é responder todas as 25 Perguntas e tentar chegar ao 1 milhão \n\n  MAS ATENÇÃO!!! \n  Se até o final da pergunta Numero 25 você tiver acumulado 1 milhão ou mais, você tem direito uma Pergunta Bonus chamada \n\n 💀 ARRISCA TUDO 💀 \n\n  Pergunta na qual se você acerta leva seu 💵 Valor Acumulado ao Dobro🤑  \n  Mas se Errar perde todo 💵 Valor Acumulado 💀 \n\n | ENTER | \n"))
 
-# VOU CONTINUAR AMANHÃ QUE EU TO DE SACO CHEIO JÁ, ANOTAÇÕES PARA CONTINUAR O PROJETO:
-# VOU DAR MEUS PULOS PRA USAR IF E ELSE NAS PERGUNTAS, È ISSO È NOIXXXXX
-
-# AQUI È DANDO INICIO E COMEÇANDO O PRIMEIRO TEMA 😂 Mais Facil😂
+# AQUI È DANDO INICIO E COMEÇANDO O TEMA 1
+# TEMA 1: (NOTICIA E REPORTAGEM) DIFICULDADE: (😂 Mais Facil😂)
 
 print (input(" 🎤 Vamos dar inicio: \n Primeiro Tema: Noticia e Reportagem \n Dificuldade: 😂 Mais Facil😂 \n\n | ENTER | \n"))
 
