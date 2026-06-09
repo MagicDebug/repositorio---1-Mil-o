@@ -15,23 +15,58 @@ Máteria_selecionada = (input(" 🤖 Matérias: \n (1) 📕 PORTUGUÊS📕 \n (2
 #===========================================================================================================
 def gerenciar_pergunta(numero, enunciado, alternativas, alternativa_correta, valor):
     global Valor_Acumulado
+    global Ajuda_plateia
+    global Ajuda_Universitarios
+
     while True:
         print(f"\n 📝 PERGUNTA {numero} - VALENDO R$ {valor:,.2f} 📝")
         print(f"\n 🎤 {enunciado}\n")
+
         for letra, texto in alternativas.items():
             print(f" 🎤 Alternativa ({letra}) {texto}")
-        
-        resposta = input("\n 👤 Sua resposta [A/B/C/D/E]: ").upper()
-        
-        if resposta in ["A", "B", "C", "D", "E"]:
+
+        resposta = input(
+            "\n | RESPONDA [A/B/C/D/E] |"
+            "\n | PLATEIA [P] |"
+            "\n | UNIVERSITÁRIOS [U] |"
+            "\n\n 👤 "
+        ).upper()
+
+        if resposta == "P":
+            if Ajuda_plateia > 0:
+                Ajuda_plateia -= 1
+
+                print("\n 🥸 AJUDA DA PLATEIA 🥸")
+                print(f" 🥸 Acho que é ({alternativa_correta})")
+                print(" 🥸 Talvez seja (A)")
+                print(f" 🥸 Tenho quase certeza que é ({alternativa_correta})")
+            else:
+                print("\n ❌ Você não possui mais ajudas da plateia!")
+
+        elif resposta == "U":
+            if Ajuda_Universitarios > 0:
+                Ajuda_Universitarios -= 1
+
+                print("\n 🎓 AJUDA DOS UNIVERSITÁRIOS 🎓")
+                print(f" 🎓 Nossa resposta é ({alternativa_correta})")
+            else:
+                print("\n ❌ Você não possui mais ajudas dos universitários!")
+
+        elif resposta in ["A", "B", "C", "D", "E"]:
+
             if resposta == alternativa_correta:
-                print("\n ✅ EXATA! PARABÉNS!!! ✅ \n")
+                print("\n ✅ EXATA! PARABÉNS!!! ✅\n")
                 Valor_Acumulado += valor
                 break
+
             else:
-                print("\n ❌ !!!ERRADA!!! ❌ \n VOCÊ PERDEU TUDO! O jogo acabou. 💀 \n")
+                print("\n ❌ !!!ERRADA!!! ❌")
+                print(" 💀 VOCÊ PERDEU TUDO!")
                 Valor_Acumulado = 0.0
                 exit()
+
+        else:
+            print("\n ⚠️ Digite apenas A, B, C, D, E, P ou U.")
 
 
 if Máteria_selecionada == "1":
