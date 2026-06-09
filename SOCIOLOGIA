@@ -1,0 +1,657 @@
+# =========================================
+# SHOW DO MILHÃO - SOCIOLOGIA
+# =========================================
+
+while True:
+
+    # =========================================
+    # VARIÁVEIS DO JOGO
+    # =========================================
+
+    pontuacao = 0
+    ajuda_plateia = 3
+    ajuda_universitarios = 2
+    jogo_ativo = True
+
+    valores = [
+        100,
+        200,
+        300,
+        500,
+        1_000,
+        2_000,
+        4_000,
+        8_000,
+        16_000,
+        32_000,
+        64_000,
+        80_000,
+        100_000,
+        120_000,
+        140_000,
+        160_000,
+        180_000,
+        200_000,
+        250_000,
+        300_000,
+        350_000,
+        400_000,
+        450_000,
+        480_000,
+        500_000,
+        1_000_000
+    ]
+
+    indice_pergunta = 0
+
+    # =========================================
+    # MENU INICIAL
+    # =========================================
+
+    print("==========================================")
+    print("🎤 BEM-VINDO A CYBER MIND 🎤")
+    print("==========================================\n")
+
+    print("📚 Tema do jogo: SOCIOLOGIA\n")
+
+    print("O jogo possui:")
+    print("✅ 5 perguntas fáceis")
+    print("✅ 5 perguntas fáceis/intermediárias")
+    print("✅ 5 perguntas intermediárias")
+    print("✅ 5 perguntas difíceis")
+    print("✅ 5 perguntas avançadas")
+    print("💀 1 pergunta do milhão\n")
+
+    print("AJUDAS:")
+    print("🥸 Plateia = 3 usos")
+    print("🎓 Universitários = 2 usos\n")
+
+    nome_usuario = input("👤 Digite seu nome: ")
+    serie_usuario = input("🏫 Digite sua série: ")
+
+    print(f"\nOlá, {nome_usuario}!")
+    print(f"Este jogo foi pensado para sua turma {serie_usuario}!\n")
+
+    input("\n| ENTER PARA CONTINUAR |\n")
+
+    # =========================================
+    # FUNÇÃO DAS PERGUNTAS
+    # =========================================
+
+    def fazer_pergunta(
+        pergunta,
+        alternativa_a,
+        alternativa_b,
+        alternativa_c,
+        alternativa_d,
+        correta,
+        justificativa
+    ):
+
+        global pontuacao
+        global ajuda_plateia
+        global ajuda_universitarios
+        global indice_pergunta
+
+        while True:
+
+            valor_atual = valores[indice_pergunta]
+
+            print("\n====================================")
+            print(
+                f"💰 VALENDO: "
+                f"R$ {valor_atual:,}".replace(",", ".")
+            )
+            print("====================================\n")
+
+            print(pergunta)
+            print()
+
+            print(f"A) {alternativa_a}")
+            print(f"B) {alternativa_b}")
+            print(f"C) {alternativa_c}")
+            print(f"D) {alternativa_d}")
+
+            resposta = input(
+                "\nDigite [A/B/C/D]\n"
+                "🥸 Plateia [P]\n"
+                "🎓 Universitários [U]\n\n"
+                "👤 "
+            ).upper()
+
+            # =========================================
+            # AJUDA DA PLATEIA
+            # =========================================
+
+            if resposta == "P":
+
+                if ajuda_plateia > 0:
+
+                    ajuda_plateia -= 1
+
+                    print("\n====================================")
+                    print("🥸 RESPOSTA DA PLATEIA")
+                    print("====================================\n")
+
+                    print(
+                        f"🥸 A maioria da plateia escolheu: "
+                        f"{correta}"
+                    )
+
+                    print(
+                        f"\n🥸 Restam "
+                        f"{ajuda_plateia} ajudas da plateia."
+                    )
+
+                else:
+
+                    print(
+                        "\n❌ Você não possui mais ajuda da plateia!"
+                    )
+
+            # =========================================
+            # AJUDA UNIVERSITÁRIOS
+            # =========================================
+
+            elif resposta == "U":
+
+                if ajuda_universitarios > 0:
+
+                    ajuda_universitarios -= 1
+
+                    print("\n====================================")
+                    print("🎓 RESPOSTA DOS UNIVERSITÁRIOS")
+                    print("====================================\n")
+
+                    print(
+                        f"🎓 Os universitários acreditam "
+                        f"que a resposta correta é: {correta}"
+                    )
+
+                    print(
+                        f"\n🎓 Restam "
+                        f"{ajuda_universitarios} ajudas universitárias."
+                    )
+
+                else:
+
+                    print(
+                        "\n❌ Você não possui mais ajuda universitária!"
+                    )
+
+            # =========================================
+            # RESPOSTA CORRETA
+            # =========================================
+
+            elif resposta == correta:
+
+                # CORREÇÃO:
+                # NÃO SOMA MAIS.
+                # AGORA A PONTUAÇÃO VIRA O VALOR DA PERGUNTA.
+
+                pontuacao = valor_atual
+
+                print("\n✅ RESPOSTA CORRETA!")
+
+                print(
+                    f"\n💵 Você ganhou "
+                    f"R$ {valor_atual:,}".replace(",", ".")
+                )
+
+                print("\n📚 Justificativa:")
+                print(justificativa)
+
+                print(
+                    f"\n💰 Valor acumulado: "
+                    f"R$ {pontuacao:,}".replace(",", ".")
+                )
+
+                indice_pergunta += 1
+
+                input("\n| ENTER PARA CONTINUAR |\n")
+
+                return True
+
+            # =========================================
+            # RESPOSTA ERRADA
+            # =========================================
+
+            elif resposta in ["A", "B", "C", "D"]:
+
+                print("\n❌ RESPOSTA ERRADA!")
+
+                print(f"\n✅ Resposta correta: {correta}")
+
+                print("\n📚 Justificativa:")
+                print(justificativa)
+
+                print("\n💀 GAME OVER!")
+
+                print(
+                    f"\n💰 Você saiu com: "
+                    f"R$ {pontuacao:,}".replace(",", ".")
+                )
+
+                return False
+
+            else:
+
+                print("\n❌ Opção inválida!")
+
+    # =========================================
+    # BLOCO 1
+    # =========================================
+
+    if jogo_ativo:
+
+        print("\n🎤 BLOCO 1 - PERGUNTAS FÁCEIS\n")
+
+        jogo_ativo = fazer_pergunta(
+            "1) Qual é o principal objeto de estudo da Sociologia enquanto ciência?",
+            "O comportamento individual e os processos biológicos do cérebro.",
+            "As relações sociais, as estruturas e as instituições que formam a sociedade.",
+            "A evolução física das espécies e os ecossistemas naturais.",
+            "O funcionamento do mercado financeiro e a economia de ações.",
+            "B",
+            "A Sociologia foca na estrutura social e nas relações coletivas."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "2) Qual filósofo francês é considerado o pai do Positivismo e criador do termo Sociologia?",
+            "Auguste Comte",
+            "Karl Marx",
+            "Max Weber",
+            "Émile Durkheim",
+            "A",
+            "Auguste Comte criou o termo Sociologia."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "3) A Sociologia se diferencia do senso comum porque utiliza:",
+            "Opiniões pessoais.",
+            "Crenças religiosas.",
+            "Método científico e pesquisa empírica.",
+            "Intuição individual.",
+            "C",
+            "A Sociologia utiliza métodos científicos."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "4) O processo de integração do indivíduo à sociedade chama-se:",
+            "Globalização",
+            "Alienação",
+            "Socialização",
+            "Urbanização",
+            "C",
+            "Socialização é o aprendizado social."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "5) Regras e costumes que orientam o comportamento social são:",
+            "Normas sociais",
+            "Interações monetárias",
+            "Instintos biológicos",
+            "Fatos isolados",
+            "A",
+            "As normas sociais regulam a sociedade."
+        )
+
+    # =========================================
+    # BLOCO 2
+    # =========================================
+
+    if jogo_ativo:
+
+        print("\n🎤 BLOCO 2 - SOCIOLOGIA E SOCIEDADE\n")
+
+        jogo_ativo = fazer_pergunta(
+            "6) Como a Sociologia contribui para políticas públicas?",
+            "Determinando leis autoritárias.",
+            "Oferecendo diagnósticos baseados em dados.",
+            "Mudando apenas a psicologia dos governantes.",
+            "Eliminando debates políticos.",
+            "B",
+            "A Sociologia fornece dados para políticas públicas."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "7) O conceito de imaginação sociológica permite:",
+            "Isolar problemas pessoais.",
+            "Relacionar indivíduo e sociedade.",
+            "Ignorar problemas econômicos.",
+            "Aceitar desigualdades como naturais.",
+            "B",
+            "Relaciona biografia e sociedade."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "8) O estudo das relações de gênero e raça promove:",
+            "Preconceitos históricos.",
+            "Fim da organização jurídica.",
+            "Debate crítico sobre igualdade.",
+            "Isolamento social.",
+            "C",
+            "A Sociologia promove igualdade."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "9) O estranhamento da realidade serve para:",
+            "Desnaturalizar comportamentos sociais.",
+            "Evitar contato humano.",
+            "Aumentar preconceitos.",
+            "Negar conflitos sociais.",
+            "A",
+            "Ajuda a perceber forças sociais."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "10) A Sociologia da Educação demonstra que a escola:",
+            "É totalmente neutra.",
+            "Garante sucesso igual para todos.",
+            "Pode reproduzir ou transformar desigualdades.",
+            "Depende apenas da genética.",
+            "C",
+            "A escola pode reproduzir desigualdades."
+        )
+
+    # =========================================
+    # BLOCO 3
+    # =========================================
+
+    if jogo_ativo:
+
+        print("\n🎤 BLOCO 3 - ÉMILE DURKHEIM\n")
+
+        jogo_ativo = fazer_pergunta(
+            "11) Para Durkheim, os fatos sociais devem ser tratados como:",
+            "Fenômenos psicológicos.",
+            "Coisas externas e coercitivas.",
+            "Eventos individuais.",
+            "Ideias abstratas.",
+            "B",
+            "Os fatos sociais são coercitivos."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "12) Características do fato social:",
+            "Generalidade, exterioridade e coercitividade.",
+            "Subjetividade e individualidade.",
+            "Afetividade e racionalidade.",
+            "Espiritualidade e lucratividade.",
+            "A",
+            "São características do fato social."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "13) Punições sociais demonstram:",
+            "Exterioridade",
+            "Coercitividade",
+            "Generalidade",
+            "Abstração",
+            "B",
+            "A punição demonstra coerção."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "14) Idiomas e leis demonstram:",
+            "Generalidade econômica.",
+            "Livre-arbítrio.",
+            "Subjetividade moral.",
+            "Exterioridade do fato social.",
+            "D",
+            "Existem antes do indivíduo."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "15) Anomia social significa:",
+            "Equilíbrio social.",
+            "Enfraquecimento das normas sociais.",
+            "Fim dos crimes.",
+            "Controle familiar absoluto.",
+            "B",
+            "Anomia é ausência de normas."
+        )
+
+    # =========================================
+    # BLOCO 4
+    # =========================================
+
+    if jogo_ativo:
+
+        print("\n🎤 BLOCO 4 - MAX WEBER\n")
+
+        jogo_ativo = fazer_pergunta(
+            "16) Para Weber, a Sociologia estuda:",
+            "Estrutura econômica.",
+            "Ação social.",
+            "Evolução biológica.",
+            "Fatos coercitivos.",
+            "B",
+            "Weber analisa ações sociais."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "17) Buscar diploma para conseguir emprego é:",
+            "Ação racional com valores.",
+            "Ação afetiva.",
+            "Ação racional com relação a fins.",
+            "Ação tradicional.",
+            "C",
+            "Existe cálculo racional dos meios."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "18) Participar de manifestação por princípios morais é:",
+            "Ação racional com valores.",
+            "Ação tradicional.",
+            "Ação afetiva.",
+            "Ação racional com fins.",
+            "A",
+            "É guiada por valores morais."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "19) Comemorar o Natal por costume representa:",
+            "Ação racional.",
+            "Ação tradicional.",
+            "Ação afetiva.",
+            "Ação burocrática.",
+            "B",
+            "Baseada em costumes."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "20) Modelo teórico criado por Weber:",
+            "Fato social ideal.",
+            "Materialismo histórico.",
+            "Tipo ideal.",
+            "Consciência coletiva.",
+            "C",
+            "Ferramenta metodológica de Weber."
+        )
+
+    # =========================================
+    # BLOCO 5
+    # =========================================
+
+    if jogo_ativo:
+
+        print("\n🎤 BLOCO 5 - KARL MARX\n")
+
+        jogo_ativo = fazer_pergunta(
+            "21) A alienação do trabalho ocorre porque:",
+            "O trabalhador não entende as máquinas.",
+            "O trabalhador é separado dos meios de produção.",
+            "Os impostos são muito altos.",
+            "Os salários são iguais.",
+            "B",
+            "O trabalhador perde controle da produção."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "22) O produto do trabalho alienado aparece como:",
+            "Bem comunitário.",
+            "Extensão natural da criatividade.",
+            "Força estranha que domina o trabalhador.",
+            "Patrimônio pessoal.",
+            "C",
+            "O produto se torna algo estranho."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "23) O trabalho alienado passa a ser:",
+            "Sacrifício para sobreviver.",
+            "Ascensão social rápida.",
+            "Atividade prazerosa.",
+            "Vocação religiosa.",
+            "A",
+            "O trabalhador trabalha para sobreviver."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "24) A alienação entre trabalhadores gera:",
+            "Mais solidariedade.",
+            "Fim da concorrência.",
+            "Concorrência e fragmentação.",
+            "Fim dos conflitos.",
+            "C",
+            "A competição enfraquece os trabalhadores."
+        )
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "25) Conceito que esconde relações de exploração:",
+            "Fetiche da mercadoria.",
+            "Tipo ideal.",
+            "Solidariedade mecânica.",
+            "Racionalismo mercantil.",
+            "A",
+            "O fetiche oculta relações sociais."
+        )
+
+    # =========================================
+    # ESCOLHA FINAL
+    # =========================================
+
+    if jogo_ativo:
+
+        print("\n====================================")
+        print("💰 VOCÊ CHEGOU A R$ 500.000!")
+        print("====================================")
+
+        escolha = input(
+            "\nVocê deseja:\n"
+            "[P] PARAR COM R$ 500.000\n"
+            "[C] CONTINUAR PARA A PERGUNTA DO MILHÃO\n\n"
+            "👤 "
+        ).upper()
+
+        if escolha == "P":
+
+            print("\n🏆 PARABÉNS!")
+            print("💰 Você saiu com R$ 500.000")
+
+            jogo_ativo = False
+
+        elif escolha == "C":
+
+            print("\n🔥 VOCÊ DECIDIU SE ARRISCAR!")
+            print("💀 VALENDO R$ 1.000.000!")
+
+        else:
+
+            print("\n❌ Opção inválida!")
+            jogo_ativo = False
+
+    # =========================================
+    # PERGUNTA DO MILHÃO
+    # =========================================
+
+    if jogo_ativo:
+
+        jogo_ativo = fazer_pergunta(
+            "26) Sobre a uberização do trabalho, qual alternativa relaciona corretamente Marx e Weber?",
+            "Durkheim via a uberização como solidariedade mecânica.",
+            "Marx relaciona alienação e Weber racionalização do algoritmo.",
+            "Weber via aplicativos como ação afetiva.",
+            "Marx acreditava no fim da alienação pela posse do celular.",
+            "B",
+            "Marx analisa alienação e Weber racionalização técnica."
+        )
+
+    # =========================================
+    # FINAL DO JOGO
+    # =========================================
+
+    print("\n==========================================")
+    print("🎤 FIM DO JOGO")
+    print("==========================================\n")
+
+    print(f"👤 Jogador: {nome_usuario}")
+
+    print(
+        f"💰 Pontuação final: "
+        f"R$ {pontuacao:,}".replace(",", ".")
+    )
+
+    if pontuacao == 1_000_000:
+
+        print("\n🏆 VOCÊ VIROU UM MILIONÁRIO!")
+
+    elif pontuacao >= 500_000:
+
+        print("\n🎉 Excelente desempenho!")
+
+    else:
+
+        print("\n📚 Continue estudando Sociologia!")
+
+    print("\n🎤 Obrigado por jogar!")
+
+    jogar_novamente = input(
+        "\n🎮 Você quer jogar novamente? [SIM/NÃO]: "
+    ).upper()
+
+    if jogar_novamente == "NÃO" or jogar_novamente == "NAO":
+
+        print("\n👋 Até a próxima!")
+        break
