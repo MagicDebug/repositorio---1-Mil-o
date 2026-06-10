@@ -1424,7 +1424,7 @@ if Máteria_selecionada == "1":
 
         RESPOSTAS_PERGUNTA_19(pergunta_19_resposta = "")
 
-        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 19 \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 20 \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
+        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 1️9️ \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 2️0️ \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
         menu = menu.upper()
 
         if menu == "M":
@@ -1439,7 +1439,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_20_resposta = (input(" 🎤 PERGUNTA 20: \n\n Qual alternativa apresenta uma característica típica dos textos publicitários:❔ \n\n 🎤 Alternativa (A) Linguagem exclusivamente formal \n 🎤 Alternativa (B) Neutralidade absoluta sobre o assunto \n 🎤 Alternativa (C) Uso de recursos persuasivos para influenciar o público \n 🎤 Alternativa (D) Relato cronológico de acontecimentos \n 🎤 Alternativa (E) Explicação detalhada de teorias científicas \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_20_resposta = (input(" 🎤 PERGUNTA 2️0️: \n\n Qual alternativa apresenta uma característica típica dos textos publicitários:❔ \n\n 🎤 Alternativa (A) Linguagem exclusivamente formal \n 🎤 Alternativa (B) Neutralidade absoluta sobre o assunto \n 🎤 Alternativa (C) Uso de recursos persuasivos para influenciar o público \n 🎤 Alternativa (D) Relato cronológico de acontecimentos \n 🎤 Alternativa (E) Explicação detalhada de teorias científicas \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_20_resposta = pergunta_20_resposta.upper()
 
@@ -1492,7 +1492,7 @@ if Máteria_selecionada == "1":
 
         RESPOSTAS_PERGUNTA_20(pergunta_20_resposta = "")
 
-        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 20 \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 21 \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
+        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 2️0️ \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 2️1️ \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
         menu = menu.upper()
 
         if menu == "M":
@@ -1511,7 +1511,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_21_resposta = (input(" 🎤 PERGUNTA 21: \n\n Qual alternativa apresenta um verbo com objeto direto:❔ \n\n 🎤 Alternativa (A) Ela gosta de música \n 🎤 Alternativa (B) Nós precisamos de ajuda \n 🎤 Alternativa (C) O aluno assistiu ao filme \n 🎤 Alternativa (D) O escritor publicou um livro \n 🎤 Alternativa (E) Ele obedeceu ao regulamento \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_21_resposta = (input(" 🎤 PERGUNTA 2️1️: \n\n Qual alternativa apresenta um verbo com objeto direto:❔ \n\n 🎤 Alternativa (A) Ela gosta de música \n 🎤 Alternativa (B) Nós precisamos de ajuda \n 🎤 Alternativa (C) O aluno assistiu ao filme \n 🎤 Alternativa (D) O escritor publicou um livro \n 🎤 Alternativa (E) Ele obedeceu ao regulamento \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_21_resposta = pergunta_21_resposta.upper()
 
@@ -1564,7 +1564,7 @@ if Máteria_selecionada == "1":
 
         RESPOSTAS_PERGUNTA_21(pergunta_21_resposta = "")
 
-        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 21 \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 22 \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
+        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 2️1️ \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 2️2️ \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
         menu = menu.upper()
 
         if menu == "M":
@@ -1579,7 +1579,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_22_resposta = (input(" 🎤 PERGUNTA 22: \n\n Em qual alternativa o termo destacado exerce a função de objeto indireto:❔ \n\n 🎤 Alternativa (A) O atleta venceu a competição \n 🎤 Alternativa (B) A criança encontrou o brinquedo \n 🎤 Alternativa (C) O professor necessita de apoio \n 🎤 Alternativa (D) O turista visitou a cidade \n 🎤 Alternativa (E) A empresa lançou um produto \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_22_resposta = (input(" 🎤 PERGUNTA 2️2️: \n\n Em qual alternativa o termo destacado exerce a função de objeto indireto:❔ \n\n 🎤 Alternativa (A) O atleta venceu a competição \n 🎤 Alternativa (B) A criança encontrou o brinquedo \n 🎤 Alternativa (C) O professor necessita de apoio \n 🎤 Alternativa (D) O turista visitou a cidade \n 🎤 Alternativa (E) A empresa lançou um produto \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_22_resposta = pergunta_22_resposta.upper()
 
@@ -1632,7 +1632,7 @@ if Máteria_selecionada == "1":
 
         RESPOSTAS_PERGUNTA_22(pergunta_22_resposta = "")
 
-        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 22 \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 23 \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
+        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 2️2️ \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 2️3️ \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
         menu = menu.upper()
 
         if menu == "M":
@@ -1647,7 +1647,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_23_resposta = (input(" 🎤 PERGUNTA 23: \n\n Qual frase apresenta um verbo bitransitivo ( que exige objeto direto e indireto ):❔ \n\n 🎤 Alternativa (A) O bebê dormiu \n 🎤 Alternativa (B) O aluno escreveu \n 🎤 Alternativa (C) A garota chegou cedo \n 🎤 Alternativa (D) O juiz decidiu o caso \n 🎤 Alternativa (E) A mãe entregou o presente ao filho \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_23_resposta = (input(" 🎤 PERGUNTA 2️3️: \n\n Qual frase apresenta um verbo bitransitivo ( que exige objeto direto e indireto ):❔ \n\n 🎤 Alternativa (A) O bebê dormiu \n 🎤 Alternativa (B) O aluno escreveu \n 🎤 Alternativa (C) A garota chegou cedo \n 🎤 Alternativa (D) O juiz decidiu o caso \n 🎤 Alternativa (E) A mãe entregou o presente ao filho \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_23_resposta = pergunta_23_resposta.upper()
 
@@ -1700,7 +1700,7 @@ if Máteria_selecionada == "1":
 
         RESPOSTAS_PERGUNTA_23(pergunta_23_resposta = "")
 
-        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 23 \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 24 \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
+        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 2️3️ \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 2️4️ \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
         menu = menu.upper()
 
         if menu == "M":
@@ -1715,7 +1715,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_24_resposta = (input(" 🎤 PERGUNTA 24: \n\n Na frase [ Os estudantes confiaram nos professores. ] o complemento verbal é:❔ \n\n 🎤 Alternativa (A) Objeto indireto \n 🎤 Alternativa (B) Predicativo do sujeito \n 🎤 Alternativa (C) Adjunto adverbial \n 🎤 Alternativa (D) Objeto direto \n 🎤 Alternativa (E) Aposto \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_24_resposta = (input(" 🎤 PERGUNTA 2️4️: \n\n Na frase [ Os estudantes confiaram nos professores. ] o complemento verbal é:❔ \n\n 🎤 Alternativa (A) Objeto indireto \n 🎤 Alternativa (B) Predicativo do sujeito \n 🎤 Alternativa (C) Adjunto adverbial \n 🎤 Alternativa (D) Objeto direto \n 🎤 Alternativa (E) Aposto \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_24_resposta = pergunta_24_resposta.upper()
 
@@ -1742,7 +1742,7 @@ if Máteria_selecionada == "1":
 
                 elif pergunta_24_resposta == "B":
                     print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Predicativo do sujeito), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ errada ❌ \n Fim de Jogo para você! 🫵  😂 \n\n | ENTER | \n"))
+                    print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 920,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_24_resposta == "A":
@@ -1753,22 +1753,22 @@ if Máteria_selecionada == "1":
 
                 elif pergunta_24_resposta == "C":
                     print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Adjunto adverbial), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ errada ❌ \n Fim de Jogo para você! 🫵  😂 \n\n | ENTER | \n"))
+                    print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 920,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_24_resposta == "D":
                     print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Objeto direto), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ errada ❌ \n Fim de Jogo para você! 🫵  😂 \n\n | ENTER | \n"))
+                    print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 920,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_24_resposta == "E":
                     print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Aposto), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ errada ❌ \n Fim de Jogo para você! 🫵  😂 \n\n | ENTER | \n"))
+                    print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 920,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
         RESPOSTAS_PERGUNTA_24(pergunta_24_resposta = "")
 
-        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 24 \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 25 \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
+        menu = (input(" 🎤 " + nome_usuario + ", Após responder a sua PERGUNTA 2️4️ \n Você pode ver em seu (👜 MENU) o quanto já acomulou do premio, e quantas ajudas tem ao seu dispor \n Ou você pode prosseguir para sua PERGUNTA 2️5️ \n Escolha!!! \n\n | PRESSIONE [M] PARA VER MENU | \n | PARA PROSEGUIR | \n\n | ENTER | \n "))
         menu = menu.upper()
 
         if menu == "M":
@@ -1783,7 +1783,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_25_resposta = (input(" 🎤 PERGUNTA 25: \n\n Assinale a alternativa em que a classificação dos complementos verbais está correta:❔ \n\n 🎤 Alternativa (A) [ Ela comprou flores.→ objeto indireto \n 🎤 Alternativa (B) Para perceber diferentes pontos de vista \n 🎤 Alternativa (C) Para aprender matemática \n 🎤 Alternativa (D) Para traduzir idiomas \n 🎤 Alternativa (E) Para copiar textos \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_25_resposta = (input(" 🎤 PERGUNTA 2️5️: \n\n Consegue assinalar qual alternativa esta \n com a classificação dos complementos verbais correta:❔ \n\n 🎤 Alternativa (A) [ Ela comprou flores ] = objeto indireto \n 🎤 Alternativa (B) [ Entreguei a carta ao diretor ] = objeto direto e objeto indireto \n 🎤 Alternativa (C) [ Necessitamos de recursos ] = objeto direto \n 🎤 Alternativa (D) [ Gosto de café ] = objeto direto \n 🎤 Alternativa (E) [ Assisti ao espetáculo ] = objeto direto \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_25_resposta = pergunta_25_resposta.upper()
 
@@ -1792,7 +1792,7 @@ if Máteria_selecionada == "1":
                         Ajuda_plateia -= 1
                         
                         print (input("\n 🎤 Você pediu a ajuda da Plateia: \n Eles não tem certeza de qual seja a certa então boa sorte! \n\n | ENTER | "))
-                        print (" 👨  Claro que é (B)! \n 👨  Chuto que é (A)! \n 👨  Com certeza é (B)! \n\n")
+                        print (" 👨  Claro que é (B)! \n 👨  Chuto que é (B)! \n 👨  Com certeza é (B)! \n\n")
                         print (input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n diga qual é a alternativa correta \n\n | PARA VER NOVAMENTE AS RESPOSTAS | | ENTER | \n\n"))
 
                     else:
@@ -1809,29 +1809,29 @@ if Máteria_selecionada == "1":
                         print (input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n"))
 
                 elif pergunta_25_resposta == "A":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Para decorar palavras), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ errada ❌ \n Fim de Jogo para você! 🫵  😂 \n\n | ENTER | \n"))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Ela comprou flores e etc...), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 960,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_25_resposta == "B":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Para perceber diferentes pontos de vista), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 3,355,443,200,00!!! \n\n | ENTER | \n"))
-                    Valor_Acumulado = 3355443200.0
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Entreguei a carta ao diretor e etc...), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 1,000,000,00!!! \n\n | ENTER | \n"))
+                    Valor_Acumulado = 1000000
                     break
 
                 elif pergunta_25_resposta == "C":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Para aprender matemática), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ errada ❌ \n Fim de Jogo para você! 🫵  😂 \n\n | ENTER | \n"))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Necessitamos de recursos e etc...), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ❌ errada ❌ Você não acertou então saira com 💵 960,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_25_resposta == "D":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Para traduzir idiomas), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ errada ❌ \n Fim de Jogo para você! 🫵  😂 \n\n | ENTER | \n"))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Gosto de café e etc...), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ❌ errada ❌ Você não acertou então saira com 💵 960,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_25_resposta == "E":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Para copiar textos), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ errada ❌ \n Fim de Jogo para você! 🫵  😂 \n\n | ENTER | \n"))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Assisti ao espetáculo e etc...), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ❌ errada ❌ Você não acertou então saira com 💵 960,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
         RESPOSTAS_PERGUNTA_25(pergunta_25_resposta = "")
