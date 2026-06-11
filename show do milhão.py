@@ -5325,7 +5325,7 @@ elif Máteria_selecionada == "5":
         global nome_usuario
 
         # --- TELA DE CONFIRMAÇÃO DRAMÁTICA ---
-        print("\n🚨 SEJA BEM-VINDO À PERGUNTA FINAL DO SHOW DO MILHÃO! 🚨")
+        print("\n🚨 SEJA BEM-VINDO À PERGUNTA FINAL DO CYBER MIND SHOW! 🚨")
         print(f"🎤 {nome_usuario}, as luzes do estúdio se apagam agora.")
         print("Você está de frente com a pergunta de UM MILHÃO DE REAIS.")
         print("\nEsta é a sua ÚLTIMA CHANCE de mudar de ideia:")
