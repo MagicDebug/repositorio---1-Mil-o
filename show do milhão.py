@@ -228,7 +228,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_3_resposta = (input(" 🎤 PERGUNTA 3️: \n\n [ Ontem ocorreu uma forte chuva na cidade. ] \n\n A Esse trecho pertence mais provavelmente a:❔ \n\n 🎤 Alternativa (A) Notícia \n 🎤 Alternativa (B) Receita \n 🎤 Alternativa (C) Poema \n 🎤 Alternativa (D) Propaganda \n 🎤 Alternativa (E) Música \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_3_resposta = (input(" 🎤 PERGUNTA 3️: \n\n [ Ontem ocorreu uma forte chuva na cidade. ] \n\n Esse trecho pertence mais provavelmente a:❔ \n\n 🎤 Alternativa (A) Notícia \n 🎤 Alternativa (B) Receita \n 🎤 Alternativa (C) Poema \n 🎤 Alternativa (D) Propaganda \n 🎤 Alternativa (E) Música \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 
                 pergunta_3_resposta = pergunta_3_resposta.upper()
@@ -251,12 +251,12 @@ if Máteria_selecionada == "1":
                     if Ajuda_Universitarios > 0:
                         Ajuda_Universitarios -= 1
 
-                    else:
-                        print (input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n"))
-                        
                         print (input("\n 🎤 Você pediu a ajuda dos Universitários: \n Veja o que eles dirão \n\n | ENTER | "))
                         print (" 🎓  Temos certeza de que todas estão erradas \n Menos a alternativa (A) \n\n ")
                         print (input(" 🎤 " + nome_usuario + ", Após receber a ajuda dos Universitários: \n diga qual é a alternativa correta \n\n | PARA VER NOVAMENTE AS RESPOSTAS | | ENTER | \n\n"))
+
+                    else:
+                        print (input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n"))
 
                 # ALTERNATIVA A (❌ ERRADA ❌)
                 
@@ -468,7 +468,7 @@ if Máteria_selecionada == "1":
 
             while True:
                 
-                pergunta_6_resposta = (input(" 🎤 PERGUNTA 6️:\n\n [ A cidade inaugurou um novo hospital. ] \n [ O novo hospital é uma excelente conquista para a população. ] \n\n Qual a diferença de um para o outro:❔ \n\n 🎤 Alternativa (A) Ambos informam apenas fatos \n 🎤 Alternativa (B) O primeiro informa e o segundo opina \n 🎤 Alternativa (C) Ambos são propagandas \n 🎤 Alternativa (D) Ambos são poemas \n 🎤 Alternativa (E) O segundo é uma receita \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_6_resposta = (input(" 🎤 PERGUNTA 6️:\n\n [ Entre o céu e a terra, minha alma vive em conflito. ] \n [ A vida no campo traz paz e tranquilidade. ] \n\n Qual texto apresenta uma característica do Barroco:❔ \n\n 🎤 Alternativa (A) Texto 2 \n 🎤 Alternativa (B) Texto 1 \n 🎤 Alternativa (C) Ambos \n 🎤 Alternativa (D) Nenhum \n 🎤 Alternativa (E) Não é possível saber \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_6_resposta = pergunta_6_resposta.upper()
 
@@ -493,28 +493,28 @@ if Máteria_selecionada == "1":
                         print (input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n"))
 
                 elif pergunta_6_resposta == "A":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Ambos informam apenas fatos), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Texto 2), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 200,000,00  🫵  😂  \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_6_resposta == "B":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (O primeiro informa e o segundo opina), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Texto 1), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 240,000,00!!! \n\n | ENTER | \n"))
                     Valor_Acumulado = 240000
                     break
 
                 elif pergunta_6_resposta == "C":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Ambos são propagandas), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Ambos), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 200,000,00  🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_6_resposta == "D":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Ambos são poemas), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Nenhum), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 200,000,00  🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_6_resposta == "E":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (O segundo é uma receita), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Não é possível saber), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 200,000,00  🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
@@ -535,7 +535,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_7_resposta = (input(" 🎤 PERGUNTA 7️: \n\n [ O trânsito aumentou 20% ] \n [ O aumento do trânsito mostra a falta de planejamento urbano. ] \n\n O textos 2 em relação ao texto 1 apresenta:❔ \n\n 🎤 Alternativa (A) Opinião \n 🎤 Alternativa (B) Receita \n 🎤 Alternativa (C) Propaganda \n 🎤 Alternativa (D) Entrevista \n 🎤 Alternativa (E) Fábula \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_7_resposta = (input(" 🎤 PERGUNTA 7️: \n\n O principal representante do Barroco brasileiro foi:❔ \n\n 🎤 Alternativa (A) Gregório de Matos \n 🎤 Alternativa (B) Tomás Antônio Gonzaga \n 🎤 Alternativa (C) Cláudio Manuel da Costa \n 🎤 Alternativa (D) José de Alencar \n 🎤 Alternativa (E) Gonçalves Dias \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_7_resposta = pergunta_7_resposta.upper()
 
@@ -561,28 +561,28 @@ if Máteria_selecionada == "1":
                         print (input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n"))
 
                 elif pergunta_7_resposta == "B":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Receita), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Tomás Antônio Gonzaga), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 240,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_7_resposta == "A":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Opinião), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Gregório de Matos), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 280,000,00!!! \n\n | ENTER | \n"))
                     Valor_Acumulado = 280000
                     break
 
                 elif pergunta_7_resposta == "C":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Propaganda), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Cláudio Manuel da Costa), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 240,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_7_resposta == "D":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Entrevista), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (José de Alencar), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 240,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_7_resposta == "E":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Fábula), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Gonçalves Dias), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 240,000,00 🫵 😂 \n\n | ENTER | \n"))
                     exit() 
 
@@ -603,7 +603,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_8_resposta = (input(" 🎤 PERGUNTA 8️: \n\n [ Nova praça é inaugurada no centro. ] \n [ A praça deve melhorar o lazer dos moradores. ] \n\n Qual deles expressa opinião:❔ \n\n 🎤 Alternativa (A) Texto 1 \n 🎤 Alternativa (B) Nenhum \n 🎤 Alternativa (C) Ambos \n 🎤 Alternativa (D) Texto 2 \n 🎤 Alternativa (E) Não é possível saber \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_8_resposta = (input(" 🎤 PERGUNTA 8️: \n\n [ A natureza é o lugar ideal para uma vida simples e feliz. ] \n [ O homem sofre dividido entre o pecado e a salvação. ] \n\n Qual deles expressa opinião:❔ \n\n 🎤 Alternativa (A) Texto 2 \n 🎤 Alternativa (B) Ambos \n 🎤 Alternativa (C) Nenhum \n 🎤 Alternativa (D) Texto 1 \n 🎤 Alternativa (E) Não é possível saber \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_8_resposta = pergunta_8_resposta.upper()
 
@@ -629,23 +629,23 @@ if Máteria_selecionada == "1":
                         print (input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n"))
 
                 elif pergunta_8_resposta == "A":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Texto 1), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Texto 2), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 240,000,00 🫵 😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_8_resposta == "D":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Texto 2), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Texto 1), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 320,000,00!!! \n\n | ENTER | \n"))
                     Valor_Acumulado = 320000
                     break
 
                 elif pergunta_8_resposta == "C":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Ambos), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Nenhum), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 240,000,00 🫵 😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_8_resposta == "B":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Nenhum), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Ambos), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 240,000,00 🫵 😂 \n\n | ENTER | \n"))
                     exit() 
 
@@ -671,7 +671,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_9_resposta = (input(" 🎤 PERGUNTA 9️: \n\n [ Escola recebe novos computadores. ] \n [ Os novos computadores representam um avanço importante. ] \n\n O Texto 2:❔ \n\n 🎤 Alternativa (A) É uma propaganda \n 🎤 Alternativa (B) Informar um fato apenas \n 🎤 Alternativa (C) Faz uma avaliação \n 🎤 Alternativa (D) É uma receita \n 🎤 Alternativa (E) É uma notícia policial \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_9_resposta = (input(" 🎤 PERGUNTA 9️: \n\n Uma característica do Arcadismo é:❔ \n\n 🎤 Alternativa (A) Linguagem exagerada e rebuscada \n 🎤 Alternativa (B) Conflito entre fé e razão \n 🎤 Alternativa (C) Valorização da natureza e da simplicidade \n 🎤 Alternativa (D) Uso frequente de antíteses \n 🎤 Alternativa (E) Temática exclusivamente religiosa \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_9_resposta = pergunta_9_resposta.upper()
 
@@ -697,28 +697,28 @@ if Máteria_selecionada == "1":
                         print (input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n"))
 
                 elif pergunta_9_resposta == "C":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Faz uma avaliação), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Valorização da natureza e da simplicidade), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 360,000,00!!! \n\n | ENTER | \n"))
                     Valor_Acumulado = 360000
                     break
 
                 elif pergunta_9_resposta == "B":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Informar um fato apenas), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Conflito entre fé e razão), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 320,000,00 🫵 😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_9_resposta == "A":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (É uma propaganda), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Linguagem exagerada e rebuscada), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 320,000,00 🫵 😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_9_resposta == "D":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (É uma receita), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Uso frequente de antíteses), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 320,000,00 🫵 😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_9_resposta == "E":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (É uma notícia policial), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Temática exclusivamente religiosa), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 320,000,00 🫵 😂 \n\n | ENTER | \n"))
                     exit() 
 
@@ -739,7 +739,7 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                pergunta_10_resposta = (input(" 🎤 PERGUNTA 1️0️: \n\n Qual habilidade está sendo usada ao comparar dois textos sobre o mesmo assunto: ❔ \n\n 🎤 Alternativa (A) Resolver contas \n 🎤 Alternativa (B) Traduzir idiomas \n 🎤 Alternativa (C) Decorar palavras \n 🎤 Alternativa (D) Fazer desenhos \n 🎤 Alternativa (E) Reconhecer diferentes tratamentos da informação \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
+                pergunta_10_resposta = (input(" 🎤 PERGUNTA 1️0️: \n\n Qual alternativa apresenta uma característica do Arcadismo:❔ \n\n 🎤 Alternativa (A) Cultismo \n 🎤 Alternativa (B) Conceptismo \n 🎤 Alternativa (C) Dualidade religiosa \n 🎤 Alternativa (D) Exagero de linguagem \n 🎤 Alternativa (E) Busca pelo equilíbrio e pela vida simples \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 👨  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 "))
 
                 pergunta_10_resposta = pergunta_10_resposta.upper()
 
@@ -765,28 +765,28 @@ if Máteria_selecionada == "1":
                         print (input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n"))
 
                 elif pergunta_10_resposta == "A":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Resolver contas), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Cultismo), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 360,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_10_resposta == "E":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Reconhecer diferentes tratamentos da informação), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Busca pelo equilíbrio e pela vida simples), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ✅ exata ✅ \n Você acaba de receber 💵 400,000,00!!! \n\n | ENTER | \n"))
                     Valor_Acumulado = 400000
                     break
 
                 elif pergunta_10_resposta == "C":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Decorar palavras), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Dualidade religiosa), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 360,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_10_resposta == "D":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Fazer desenhos), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Exagero de linguagem), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 360,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
                 elif pergunta_10_resposta == "B":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Traduzir idiomas), sua resposta está eee... \n\n | ENTER | "))
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é (Conceptismo), sua resposta está eee... \n\n | ENTER | "))
                     print (input(" 🎤 ❌ errada ❌ \n Você não acertou então saira com 💵 360,000,00 🫵  😂 \n\n | ENTER | \n"))
                     exit() 
 
@@ -808,9 +808,9 @@ if Máteria_selecionada == "1":
 
         # AQUI È COMEÇANDO O TEMA 3
 
-        # TEMA 3: (Artigo de Opinião) DIFICULDADE: (😢 Médio😢)
+        # TEMA 3: (Artigo de Opinião) DIFICULDADE: (🥶 Médio🥶)
 
-        print (input(" 🎤 Vamos dar inicio: \n Terceiro Tema: Artigo de Opinião \n Dificuldade: 😢 Médio😢  \n\n | ENTER | \n"))
+        print (input(" 🎤 Vamos dar inicio: \n Terceiro Tema: Artigo de Opinião \n Dificuldade: 🥶 Médio🥶  \n\n | ENTER | \n"))
 
         # PERGUNTA NUMERO 11
 
@@ -1845,7 +1845,7 @@ if Máteria_selecionada == "1":
         # PREPARAÇÂO PARA A ULTIMA PERGUNTA
 
         print (input(" 🎤 " + nome_usuario + ", Parabens por conseguir chegar até aqui!!! \n Você conseguiu acomular um total de... | \n\n | ENTER | \n"))
-        print (input(" 🎤 " + nome_usuario + ", 💵  !!!3,355,443,200,00!!! 💵 \n\n 🎤 Agora para por fim encerrar nosso programa, você enfim chegou na legitima ultima pergunta\n esta pergunta é definitiva para saber se você sai daqui com seu; \n\n | 💵  valor acumulado em dobro 💵 ou \n | 💀 se saira daqui sem nada 💀 \n\n 🎤 Vamos para á: \n\n | ENTER | \n"))
+        print (input(" 🎤 " + nome_usuario + ", 💵  !!!1,000,000,00!!! 💵 \n\n 🎤 Agora para por fim encerrar nosso programa, você enfim chegou na legitima ultima pergunta\n esta pergunta é definitiva para saber se você sai daqui com seu; \n\n | 💵  valor acumulado em dobro 💵 ou \n | 💀 se saira daqui sem nada 💀 \n\n 🎤 Vamos para á: \n\n | ENTER | \n"))
 
         # PERGUNTA 26
 
@@ -1854,43 +1854,36 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                resposta_bonus = (input(" 💀 ARRISCA TUDO 💀 \n Pergunta 26: \n\n 🎤 [Texto 1] \n A inteligência artificial automatiza tarefas e amplia a produtividade, liberando o ser humano para o pensamento estratégico. \n\n 🎤 [Texto 2] \n Ao assumir as escolhas estratégicas com base em dados históricos, os algoritmos moldam as decisões humanas de forma imperceptível. \n\n Confrontando os dois textos, conclui-se que o Texto 2:❔ \n\n 🎤 Alternativa (A) Corrobora a tese do Texto 1 sobre a total liberdade humana \n 🎤 Alternativa (B) Problematiza o Texto 1 ao sugerir uma perda sutil de autonomia \n 🎤 Alternativa (C) Limita-se a descrever o funcionamento técnico de um algoritmo \n 🎤 Alternativa (D) Desmente o Texto 1 ao provar que a produtividade diminuiu \n 🎤 Alternativa (E) Trata de um assunto completamente diferente do Texto 1 \n\n | SE VOCÊ ACERTAR: SEU PRÊMIO DOBRA PARA 💵 6,710,886,400,00!!! 🤑 | \n | SE VOCÊ ERRAR: PERDE TUDO E SAI COM R$ 0.00! 💀 | \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n\n | ENTER | \n\n 👤 "))
+                resposta_bonus = (input(" 💀 ARRISCA TUDO 💀 \n\n 🎤 [ O Barroco explorava conflitos \n entre corpo e alma por meio de antíteses e paradoxos \n\n O Arcadismo procurava a simplicidade, a razão e a valorização da natureza em ambos os movimentos \n Porém, a linguagem refletia visões de mundo influenciadas pelo contexto histórico de cada época. ] \n\n Com base nesse trecho, qual característica diferencia de forma direta o Arcadismo do Barroco:❔ \n\n 🎤 Alternativa (A) Religiosidade \n 🎤 Alternativa (B) Nacionalismo \n 🎤 Alternativa (C) Dualismo \n 🎤 Alternativa (D) Bucolismo \n 🎤 Alternativa (E) Conceptismo \n\n | SE VOCÊ ACERTAR LEVA TUDO!!! 🤑 | \n | SE VOCÊ ERRAR PERDE TUDO E SAI COM R$ 0.00!!! | \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n\n | ENTER | \n\n 👤 "))
 
                 resposta_bonus = resposta_bonus.upper()
 
                 if resposta_bonus == "A":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (A), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ARRISCOU TUDO E PERDEU!!! O jogo acabou na última linha! 💀  😂 \n\n | ENTER | \n"))
-                    Valor_Acumulado = 0.0
-                    exit() 
-
-                elif resposta_bonus == "B":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (B), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ✅ EXATA! PARABÉNS!!! ✅ \n VOCÊ DOBROU SEU PRÊMIO E SE TORNOU O MAIOR CAMPEÃO DO SHOW DO MILHÃO!!! 🤑 \n Você acaba de receber: 💵 R$ 6.710.886.400,00!!! \n\n | ENTER | \n"))
-                    Valor_Acumulado = 6710886400.0
-                    break
-
-                elif resposta_bonus == "C":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (C), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ARRISCOU TUDO E PERDEU!!! O jogo acabou na última linha! 💀  😂 \n\n | ENTER | \n"))
-                    Valor_Acumulado = 0.0
-                    exit() 
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Religiosidade), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" ❌ errada ❌ \n 🎤 Você não acertou a pergunta 💀 ARRISCA TUDO 💀 \n Você acaba de perder TODO O VALOR ACUMULADO \n 💵 1,000,000,00 Indo direto para a 🗑️ \n 🫵  😂 \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0 
 
                 elif resposta_bonus == "D":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (D), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ARRISCOU TUDO E PERDEU!!! O jogo acabou na última linha! 💀  😂 \n\n | ENTER | \n"))
-                    Valor_Acumulado = 0.0
-                    exit() 
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Bucolismo), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" ✅ EXATA! PARABÉNS!!! ✅ \n 🎤 VOCÊ LEVA SEU PRÊMIO E SE TORNA O MAIOR CAMPEÃO DO CYBER!!! 🤑 \n Você acaba de receber: 💵 R$ 1,000,000,00!!! \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0
+
+                elif resposta_bonus == "C":
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Dualismo), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" ❌ errada ❌ \n 🎤 Você não acertou a pergunta 💀 ARRISCA TUDO 💀 \n Você acaba de perder TODO O VALOR ACUMULADO \n 💵 1,000,000,00 Indo direto para a 🗑️ \n 🫵  😂 \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0
+
+                elif resposta_bonus == "B":
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Nacionalismo), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" ❌ errada ❌ \n 🎤 Você não acertou a pergunta 💀 ARRISCA TUDO 💀 \n Você acaba de perder TODO O VALOR ACUMULADO \n 💵 1,000,000,00 Indo direto para a 🗑️ \n 🫵  😂 \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0 
 
                 elif resposta_bonus == "E":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (E), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ARRISCOU TUDO E PERDEU!!! O jogo acabou na última linha! 💀  😂 \n\n | ENTER | \n"))
-                    Valor_Acumulado = 0.0
-                    exit() 
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Conceptismo), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" ❌ errada ❌ \n 🎤 Você não acertou a pergunta 💀 ARRISCA TUDO 💀 \n Você acaba de perder TODO O VALOR ACUMULADO \n 💵 1,000,000,00 Indo direto para a 🗑️ \n 🫵  😂 \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0 
 
-                    PERGUNTA_26_ARRISCA_TUDO_(resposta_bonus = "")
-
-                    print (input(" 🎤 " + nome_usuario + ", Obrigado por jogar e testar nosso primeiro show \n 🎤 Gostaria de dizer no lugar do criador do meu papai, responsavel por criar o codigo deste Show, que foi um trabalho de muita dedicação dele. \n\n | ENTER | \n"))
+        PERGUNTA_26_ARRISCA_TUDO_(resposta_bonus = "")             
 
 elif Máteria_selecionada == "4" :
     input("\n 🤖 MATERIA DE GEOGRAFIA SELECIONADA: \n\n | TECLA [ ENTER ] PARA PROSSEGUIR | \n")
