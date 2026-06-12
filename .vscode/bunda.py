@@ -1,1 +1,0 @@
-print ("MULHEREs CACETADAS NA BUNDA")
