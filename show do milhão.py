@@ -1988,11 +1988,13 @@ elif Máteria_selecionada == "4":
     gerenciar_pergunta(25, "Qual bloco econômico é formado por Brasil, Argentina, Paraguai e Uruguai?",
                        {"A": "União Europeia", "B": "NAFTA", "C": "Mercosul", "D": "APEC", "E": "OTAN"}, "C", 500000.0)
     
-    def PERGUNTA_26_ARRISCA_TUDO_(resposta_bonus):
+    
+    def PERGUNTA_26_ARRISCA_TUDO_():
         global Valor_Acumulado
 
         while True:
-            resposta_bonus = (input(" 💀 ARRISCA TUDO 💀 \n Pergunta 26: \n\n"
+            # O próprio input já captura a resposta, não precisa dela no 'def' lá em cima
+            resposta_bonus = input(" 💀 ARRISCA TUDO 💀 \n Pergunta 26: \n\n"
             "🎤 O conceito de globalização refere-se principalmente a:\n\n"
             "🎤 Alternativa (A) Isolamento econômico entre países\n"
             "🎤 Alternativa (B) Ampliação das conexões econômicas, culturais e tecnológicas entre diferentes regiões do mundo\n"
@@ -2001,11 +2003,12 @@ elif Máteria_selecionada == "4":
             "🎤 Alternativa (E) Substituição dos governos por empresas privadas\n\n"
             "| SE VOCÊ ACERTAR: SEU PRÊMIO DOBRA! 🤑 |\n"
             "| SE VOCÊ ERRAR: PERDE TUDO! 💀 |\n\n"
-            "| PARA RESPONDER DIGITE [A/B/C/D/E] |\n\n 👤 "))
+            "| PARA RESPONDER DIGITE [A/B/C/D/E] |\n\n 👤 ")
+            
             resposta_bonus = resposta_bonus.upper()
 
             if resposta_bonus == "B":
-                print(input("\n 🎤 ✅ EXATA! PARABÉNS!!! ✅ \n VOCÊ GANHOU 1 MILHÃO DE REAIS!!! \n\n | ENTER | "))
+                print(input("\n 🎤 ✅ EXATA! PARABÉNS!!! ✅ \n VOCÊ GANHOU UM MILHÂO DE REAIS PARABENS!!! \n\n | ENTER | "))
                 Valor_Acumulado = 1000000.0
                 break
 
@@ -2013,6 +2016,9 @@ elif Máteria_selecionada == "4":
                 print(input("\n 🎤 ❌ ERRADA! ❌ \n VOCÊ PERDEU TUDO! 💀 \n\n | ENTER | "))
                 Valor_Acumulado = 0.0
                 sys.exit()
+
+    
+    PERGUNTA_26_ARRISCA_TUDO_()
             #print (input(" CREDITOS: \n\n Matéria de Português: Leonardo Matias de Souza Fonseca \n Matéria de Fisica: Arthur Marques \n Matéria de Geografia: Luís Fernando \n Matéria de Química: Fernanda Mariah \n Matéria de História: Joel \n Materia de Matemática: Heitor Ribeiro n\n | ENTER | \n"))
 
 
