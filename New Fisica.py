@@ -886,7 +886,7 @@ def ultradificil3():
                 continue
 
         elif ultra_3 == 'A':
-            print("\n✅ CORRETA! Parabéns, você ganhou 💵 20.000,00\n")
+            print("\n✅ CORRETA! Parabéns, você ganhou 💵 420.000,00\n")
             return True
 
         else:
@@ -937,7 +937,7 @@ def ultradificil4():
                 continue
 
         elif ultra_4 == 'A':
-            print("\n✅ CORRETA! Parabéns, você ganhou 💵 20.000,00\n")
+            print("\n✅ CORRETA! Parabéns, você ganhou 💵 460.000,00\n")
             return True
 
         else:
@@ -986,7 +986,7 @@ def ultradificil5():
                 continue
 
         elif ultra_5 == 'A':
-            print("\n✅ CORRETA! Parabéns, você ganhou 💵 20.000,00\n")
+            print("\n✅ CORRETA! Parabéns, você ganhou 💵 500.000,00\n")
             return True
 
         else:
