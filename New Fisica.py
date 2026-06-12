@@ -16,7 +16,7 @@ def RESPOSTAS_PERGUNTA_1 ():
 
     while True:
         print (input("=== NIVEL 1 - FACIL ==="))
-        pergunta_1_resposta = (input(" 🎤 PERGUNTA 1: O calor do Sol chega na Terra por?: \n\n  Alternativa (A) Chuva \n  Alternativa (B) Vento \n  Alternativa (C) Radiação \n  Alternativa (D) Gelo \n\n | PARA RESPONDER DIGITE [A/B/C/D] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | DIGITE A ALTERNATIVA MAIS ENTER PARA CONTINUAR | \n\n 👤 "))
+        pergunta_1_resposta = (input(" 🎤 PERGUNTA 1: \n Tema: Propagação de calor \n\n O calor do Sol chega na Terra por?: \n\n  Alternativa (A) Chuva \n  Alternativa (B) Vento \n  Alternativa (C) Radiação \n  Alternativa (D) Gelo \n\n | PARA RESPONDER DIGITE [A/B/C/D] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITARIOS PRESSIONE [U] | \n\n | DIGITE A ALTERNATIVA MAIS ENTER PARA CONTINUAR | \n\n 👤 "))
         # AJUDA DA PLATEIA
         if pergunta_1_resposta == "P" or pergunta_1_resposta == "p":
             if Ajuda_da_pessoas > 0:
