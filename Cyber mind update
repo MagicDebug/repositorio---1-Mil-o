@@ -7472,6 +7472,7 @@ elif Máteria_selecionada == "3":
     Ajuda_Universitarios = 5
     Valor_Acumulado = 0.0
 
+    print (input("\n 🤖 MATERIA DE PORTUGÊS SELECIONADA: \n\n | TECLA [ ENTER ] PARA PROSSEGUIR | \n"))
 
     print (input("\n 🎤 " + nome_usuario + ", as Instruções do Jogo são as seguintes: \n  O Show será dividido em 5 temas do 😂 Mais Fácil até o, 🤬 Mais Difícil \n contendo 25 perguntas divididas para os diferentes 5 temas, podendo ter a ajuda da; \n\n 🥸  Plateia 3 vezes \n 🎓 Universitários 5 vezes \n\n  | ENTER | \n"))
     print (input(" 🎤 Cada pergunta vale um agrande quantia de dinheiro R$💵 \n  A cada acerto o valor da próxima pergunta aumenta, aumentando o resultado acumulado \n  Mas se você errar, o jogo acaba na hora! \n\n | ENTER | \n"))
@@ -7763,9 +7764,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_6_resposta_m == "B":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 1000,00!")
+                print("✅ Você ganhou R$ 5000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 3000.0
+                Valor_Acumulado = 10000.0
                 break
 
             if pergunta_6_resposta_m in ["A", "C", "D", "E"]:
@@ -7813,9 +7814,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_7_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 2000,00!")
+                print("✅ Você ganhou R$ 10000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 5000.0
+                Valor_Acumulado = 20000.0
                 break
 
             if pergunta_7_resposta_m in ["A", "B", "D", "E"]:
@@ -7858,9 +7859,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_8_resposta_m == "B":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 2500,00!")
+                print("✅ Você ganhou R$ 10000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 7500.0
+                Valor_Acumulado = 30000.0
                 break
 
             if pergunta_8_resposta_m in ["A", "C", "D", "E"]:
@@ -7907,9 +7908,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_9_resposta_m == "D":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 2500,00!")
+                print("✅ Você ganhou R$ 10000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 10000.0
+                Valor_Acumulado = 40000.0
                 break
 
             if pergunta_9_resposta_m in ["A", "C", "B", "E"]:
@@ -7952,9 +7953,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_10_resposta_m == "D":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
+                print("✅ Você ganhou R$ 10000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 15000.0
+                Valor_Acumulado = 50000.0
                 break
 
             if pergunta_10_resposta_m in ["A", "C", "B", "E"]:
@@ -7995,9 +7996,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_11_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
+                print("✅ Você ganhou R$ 20000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 15000.0
+                Valor_Acumulado = 70000.0
                 break
 
             if pergunta_11_resposta_m in ["A", "B", "D", "E"]:
@@ -8039,9 +8040,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_12_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
+                print("✅ Você ganhou R$ 20000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 15000.0
+                Valor_Acumulado = 90000.0
                 break
                 
                 
@@ -8084,9 +8085,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_13_resposta_m == "A":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
+                print("✅ Você ganhou R$ 20000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 15000.0
+                Valor_Acumulado = 110000.0
                 break
 
             if pergunta_13_resposta_m in ["C", "B", "D", "E"]:
@@ -8129,7 +8130,7 @@ elif Máteria_selecionada == "3":
                 print("\n🎤 Resposta correta!")
                 print("✅ Você ganhou R$ 5000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 15000.0
+                Valor_Acumulado = 130000.0
                 break
 
             if pergunta_14_resposta_m in ["A", "B", "C", "E"]:
@@ -8170,9 +8171,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_15_resposta_m == "B":
                  print("\n🎤 Resposta correta!")
-                 print("✅ Você ganhou R$ 5000,00!")
+                 print("✅ Você ganhou R$ 20000,00!")
                  input(" | ENTER | \n")
-                 Valor_Acumulado = 15000.0
+                 Valor_Acumulado = 150000.0
                  break
 
             if pergunta_15_resposta_m in ["A", "C", "D", "E"]:
@@ -8224,8 +8225,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_16_resposta_m == "A":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
-                Valor_Acumulado = 0.0
+                print("✅ Você ganhou R$ 30000,00!")
+                Valor_Acumulado = 180000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8270,8 +8271,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_17_resposta_m == "A":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
-                Valor_Acumulado = 0.0
+                print("✅ Você ganhou R$ 30000,00!")
+                Valor_Acumulado = 210000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8316,8 +8317,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_18_resposta_m == "B":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
-                Valor_Acumulado = 0.0
+                print("✅ Você ganhou R$ 30000,00!")
+                Valor_Acumulado = 240000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8362,8 +8363,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_19_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
-                Valor_Acumulado = 0.0
+                print("✅ Você ganhou R$ 30000,00!")
+                Valor_Acumulado = 270000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8408,8 +8409,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_20_resposta_m == "D":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 5000,00!")
-                Valor_Acumulado = 0.0
+                print("✅ Você ganhou R$ 30000,00!")
+                Valor_Acumulado = 300000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8455,8 +8456,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_21_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 10.000,00!")
-                Valor_Acumulado = 10000.0
+                print("✅ Você ganhou R$ 50000,00!")
+                Valor_Acumulado = 350000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8501,8 +8502,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_22_resposta_m == "B":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 50.000,00!")
-                Valor_Acumulado = 50000.0
+                print("✅ Você ganhou R$ 50000,00!")
+                Valor_Acumulado = 400000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8547,8 +8548,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_23_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 100.000,00!")
-                Valor_Acumulado = 100000.0
+                print("✅ Você ganhou R$ 50000,00!")
+                Valor_Acumulado = 450000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8593,8 +8594,8 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_24_resposta_m == "B":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 300.000,00!")
-                Valor_Acumulado = 300000.0
+                print("✅ Você ganhou R$ 50000,00!")
+                Valor_Acumulado = 500000.0
                 input(" | ENTER | \n")
                 break
 
@@ -8639,7 +8640,7 @@ elif Máteria_selecionada == "3":
 
             elif pergunta_25_resposta_m == "B":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 500.000,00!")
+                print("✅ Você ganhou R$ 500000,00!")
                 Valor_Acumulado = 500000.0
                 input(" | ENTER | \n")
                 break
