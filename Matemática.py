@@ -829,3 +829,283 @@ RESPOSTAS_PERGUNTA_20 (pergunta_20_resposta_m = "")
 
 # PARTE DO LUIZZ
 
+
+def RESPOSTAS_PERGUNTA_21 (pergunta_21_resposta_m = ""):
+
+    global Ajuda_plateia
+    global Ajuda_Universitarios
+    global Valor_Acumulado
+
+    while True:
+        pergunta_21_resposta_m = input("🎤 PERGUNTA 21:\n\n Para que uma equação do 2º grau possua duas raízes reais e diferentes (distintas), qual deve ser a condição do discriminante (Delta)? \n\n 🎤 Alternativa A) Delta = 0 \n 🎤 Alternativa B) Delta < 0 \n 🎤 Alternativa C) Delta > 0 \n 🎤 Alternativa D) Delta ≤ 0 \n 🎤 Alternativa E) Delta não interfere nas raízes \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITÁRIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 ").upper()
+
+        if pergunta_21_resposta_m == "P":
+            if Ajuda_plateia > 0:
+                Ajuda_plateia -= 1
+                input("\n 🎤 Você pediu a ajuda da Plateia: \n Eles se lembram vagamente das aulas de álgebra! \n\n | ENTER | ")
+                print(" 🥸  Acho que é a (C)! \n 🥸  Com certeza é a (C)! \n 🥸  Fiquei em dúvida com a (A)!\n")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas da Plateia disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_21_resposta_m == "U":
+            if Ajuda_Universitarios > 0:
+                Ajuda_Universitarios -= 1
+                input("\n 🎤 Você pediu a ajuda dos Universitários: \n Veja o que eles dirão \n\n | ENTER | ")
+                print(" 🎓 Se o Delta for positivo, a raiz quadrada dele existe e gera dois valores diferentes na fórmula de Bhaskara. A certa é a (C). \n\n ")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda dos Universitários: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_21_resposta_m == "C":
+            print("\n🎤 Resposta correta!")
+            print("✅ Você ganhou R$ 10.000,00!")
+            Valor_Acumulado = 10000.0
+            input(" | ENTER | \n")
+            break
+
+        elif pergunta_21_resposta_m in ["A", "B", "D", "E"]:
+            print("\n🎤 Resposta incorreta! O jogo acabou!")
+            print("\nO valor acumulado foi de R$ " + str(Valor_Acumulado))
+            print("\nObrigado por jogar o Show do Milhão, " + nome_usuario + "!")
+            input("\n| ENTER |")
+            exit()
+
+RESPOSTAS_PERGUNTA_21 (pergunta_21_resposta_m = "")
+
+
+def RESPOSTAS_PERGUNTA_22 (pergunta_22_resposta_m = ""):
+
+    global Ajuda_plateia
+    global Ajuda_Universitarios
+    global Valor_Acumulado
+
+    while True:
+        pergunta_22_resposta_m = input("🎤 PERGUNTA 22:\n\n Analisando a equação x² - 6x + 9 = 0, o que podemos afirmar sobre a existência de suas soluções no conjunto dos números reais? \n\n 🎤 Alternativa A) Não possui nenhuma raiz real. \n 🎤 Alternativa B) Possui duas raízes reais e iguais. \n 🎤 Alternativa C) Possui duas raízes reais e diferentes. \n 🎤 Alternativa D) Possui infinitas soluções reais. \n 🎤 Alternativa E) A única solução real é x = 0. \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITÁRIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 ").upper()
+
+        if pergunta_22_resposta_m == "P":
+            if Ajuda_plateia > 0:
+                Ajuda_plateia -= 1
+                input("\n 🎤 Você pediu a ajuda da Plateia: \n\n | ENTER | ")
+                print(" 🥸  O Delta dá zero, então é a (B)! \n 🥸  Acho que é (B) também! \n 🥸  Eu acho que é a (C).\n")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas da Plateia disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_22_resposta_m == "U":
+            if Ajuda_Universitarios > 0:
+                Ajuda_Universitarios -= 1
+                input("\n 🎤 Você pediu a ajuda dos Universitários: \n\n | ENTER | ")
+                print(" 🎓 Calculando o Delta: (-6)² - 4*1*9 = 36 - 36 = 0. Quando Delta é igual a zero, a equação tem duas raízes reais e iguais. Alternativa (B). \n\n ")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda dos Universitários: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_22_resposta_m == "B":
+            print("\n🎤 Resposta correta!")
+            print("✅ Você ganhou R$ 50.000,00!")
+            Valor_Acumulado = 50000.0
+            input(" | ENTER | \n")
+            break
+
+        elif pergunta_22_resposta_m in ["A", "C", "D", "E"]:
+            print("\n🎤 Resposta incorreta! O jogo acabou!")
+            print("\nO valor acumulado foi de R$ " + str(Valor_Acumulado))
+            print("\nObrigado por jogar o Show do Milhão, " + nome_usuario + "!")
+            input("\n| ENTER |")
+            exit()
+
+RESPOSTAS_PERGUNTA_22 (pergunta_22_resposta_m = "")
+
+
+def RESPOSTAS_PERGUNTA_23 (pergunta_23_resposta_m = ""):
+
+    global Ajuda_plateia
+    global Ajuda_Universitarios
+    global Valor_Acumulado
+
+    while True:
+        pergunta_23_resposta_m = input("🎤 PERGUNTA 23:\n\n Qual das seguintes equações do 2º grau NÃO possui nenhuma raiz ou solução real? \n\n 🎤 Alternativa A) x² - 25 = 0 \n 🎤 Alternativa B) x² - 4x = 0 \n 🎤 Alternativa C) x² + 2x + 5 = 0 \n 🎤 Alternativa D) x² - 5x + 6 = 0 \n 🎤 Alternativa E) x² - x - 1 = 0 \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITÁRIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 ").upper()
+
+        if pergunta_23_resposta_m == "P":
+            if Ajuda_plateia > 0:
+                Ajuda_plateia -= 1
+                input("\n 🎤 Você pediu a ajuda da Plateia: \n\n | ENTER | ")
+                print(" 🥸  Chuta (C)! \n 🥸  Acho que a (A) tem raiz que é 5, então não é ela... vai de (C)! \n 🥸  É a (C), confia!\n")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas da Plateia disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_23_resposta_m == "U":
+            if Ajuda_Universitarios > 0:
+                Ajuda_Universitarios -= 1
+                input("\n 🎤 Você pediu a ajuda dos Universitários: \n\n | ENTER | ")
+                print(" 🎓 Na alternativa (C), se calcularmos o Delta, temos: 2² - 4*1*5 = 4 - 20 = -16. Como o Delta é negativo, não existem raízes reais. Alternativa (C). \n\n ")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda dos Universitários: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_23_resposta_m == "C":
+            print("\n🎤 Resposta correta!")
+            print("✅ Você ganhou R$ 100.000,00!")
+            Valor_Acumulado = 100000.0
+            input(" | ENTER | \n")
+            break
+
+        elif pergunta_23_resposta_m in ["A", "B", "D", "E"]:
+            print("\n🎤 Resposta incorreta! O jogo acabou!")
+            print("\nO valor acumulado foi de R$ " + str(Valor_Acumulado))
+            print("\nObrigado por jogar o Show do Milhão, " + nome_usuario + "!")
+            input("\n| ENTER |")
+            exit()
+
+RESPOSTAS_PERGUNTA_23 (pergunta_23_resposta_m = "")
+
+
+def RESPOSTAS_PERGUNTA_24 (pergunta_24_resposta_m = ""):
+
+    global Ajuda_plateia
+    global Ajuda_Universitarios
+    global Valor_Acumulado
+
+    while True:
+        pergunta_24_resposta_m = input("🎤 PERGUNTA 24:\n\n Entrando no tema de equações exponenciais: determine o valor da incógnita x que satisfaz a equação: 3^x = 81 \n\n 🎤 Alternativa A) x = 3 \n 🎤 Alternativa B) x = 4 \n 🎤 Alternativa C) x = 9 \n 🎤 Alternativa D) x = 27 \n 🎤 Alternativa E) x = 5 \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITÁRIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 ").upper()
+
+        if pergunta_24_resposta_m == "P":
+            if Ajuda_plateia > 0:
+                Ajuda_plateia -= 1
+                input("\n 🎤 Você pediu a ajuda da Plateia: \n\n | ENTER | ")
+                print(" 🥸  Essa é fácil, 3 vezes 3 vezes 3... \n 🥸  É a (B), dá 4! \n 🥸  Voto na (B)!\n")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas da Plateia disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_24_resposta_m == "U":
+            if Ajuda_Universitarios > 0:
+                Ajuda_Universitarios -= 1
+                input("\n 🎤 Você pediu a ajuda dos Universitários: \n\n | ENTER | ")
+                print(" 🎓 Fatorando o número 81 na base 3, encontramos 3⁴. Portanto, se 3^x = 3⁴, então x = 4. Alternativa (B). \n\n ")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda dos Universitários: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_24_resposta_m == "B":
+            print("\n🎤 Resposta correta!")
+            print("✅ Você ganhou R$ 300.000,00!")
+            Valor_Acumulado = 300000.0
+            input(" | ENTER | \n")
+            break
+
+        elif pergunta_24_resposta_m in ["A", "C", "D", "E"]:
+            print("\n🎤 Resposta incorreta! O jogo acabou!")
+            print("\nO valor acumulado foi de R$ " + str(Valor_Acumulado))
+            print("\nObrigado por jogar o Show do Milhão, " + nome_usuario + "!")
+            input("\n| ENTER |")
+            exit()
+
+RESPOSTAS_PERGUNTA_24 (pergunta_24_resposta_m = "")
+
+
+def RESPOSTAS_PERGUNTA_25 (pergunta_25_resposta_m = ""):
+
+    global Ajuda_plateia
+    global Ajuda_Universitarios
+    global Valor_Acumulado
+
+    while True:
+        pergunta_25_resposta_m = input("🎤 PERGUNTA 25:\n\n Resolva a seguinte equação exponencial que envolve frações: 2^x = 1/32. Qual é o valor real de x? \n\n 🎤 Alternativa A) x = 5 \n 🎤 Alternativa B) x = -5 \n 🎤 Alternativa C) x = -4 \n 🎤 Alternativa D) x = 16 \n 🎤 Alternativa E) x = -16 \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITÁRIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 ").upper()
+
+        if pergunta_25_resposta_m == "P":
+            if Ajuda_plateia > 0:
+                Ajuda_plateia -= 1
+                input("\n 🎤 Você pediu a ajuda da Plateia: \n\n | ENTER | ")
+                print(" 🥸  Como inverteu a fração, o expoente tem que ser negativo! \n 🥸  Acho que é a (B)! \n 🥸  Eu vou na (B) também!\n")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas da Plateia disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_25_resposta_m == "U":
+            if Ajuda_Universitarios > 0:
+                Ajuda_Universitarios -= 1
+                input("\n 🎤 Você pediu a ajuda dos Universitários: \n\n | ENTER | ")
+                print(" 🎓 Sabemos que 32 é igual a 2⁵. Como ele está no denominador (1/32), aplicamos a propriedade do expoente negativo, transformando em 2⁻⁵. Logo, x = -5. Alternativa (B). \n\n ")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda dos Universitários: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_25_resposta_m == "B":
+            print("\n🎤 Resposta correta!")
+            print("✅ Você ganhou R$ 500.000,00!")
+            Valor_Acumulado = 500000.0
+            input(" | ENTER | \n")
+            break
+
+        elif pergunta_25_resposta_m in ["A", "C", "D", "E"]:
+            print("\n🎤 Resposta incorreta! O jogo acabou!")
+            print("\nO valor acumulado foi de R$ " + str(Valor_Acumulado))
+            print("\nObrigado por jogar o Show do Milhão, " + nome_usuario + "!")
+            input("\n| ENTER |")
+            exit()
+
+RESPOSTAS_PERGUNTA_25 (pergunta_25_resposta_m = "")
+
+
+def RESPOSTAS_PERGUNTA_26 (pergunta_26_resposta_m = ""):
+
+    global Ajuda_plateia
+    global Ajuda_Universitarios
+    global Valor_Acumulado
+
+    while True:
+        pergunta_26_resposta_m = input("🎤 PERGUNTA 26 - A PERGUNTA DO MILHÃO! 🏆:\n\n (Questão do Milhão) Resolva a equação exponencial que exige a redução de bases diferentes para uma mesma base comum: 9^(x + 1) = 27^(x - 1). Qual é o valor de x? \n\n 🎤 Alternativa A) x = 2 \n 🎤 Alternativa B) x = 3 \n 🎤 Alternativa C) x = 4 \n 🎤 Alternativa D) x = 5 \n 🎤 Alternativa E) x = 1 \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n | PARA CHAMAR A 🥸  PLATEIA PRESSIONE [P] | \n | PARA CHAMAR OS 🎓 UNIVERSITÁRIOS PRESSIONE [U] | \n\n | ENTER | \n\n 👤 ").upper()
+
+        if pergunta_26_resposta_m == "P":
+            if Ajuda_plateia > 0:
+                Ajuda_plateia -= 1
+                input("\n 🎤 Você pediu a ajuda da Plateia: \n Silêncio total no estúdio... Ninguém sabe resolver de cabeça! \n\n | ENTER | ")
+                print(" 🥸  Eita, essa complicou... chuta a (D). \n 🥸  Acho que é a (B). \n Instável... melhor pedir universitários!\n")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas da Plateia disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_26_resposta_m == "U":
+            if Ajuda_Universitarios > 0:
+                Ajuda_Universitarios -= 1
+                input("\n 🎤 Você pediu a ajuda dos Universitários: \n\n | ENTER | ")
+                print(" 🎓 Vamos lá: igualando as bases para 3, temos (3²)^(x+1) = (3³)^(x-1). Isso vira 2(x + 1) = 3(x - 1), que resulta em 2x + 2 = 3x - 3. Isolando o x, descobrimos que x = 5. A alternativa correta é a (D). \n\n ")
+                input(" 🎤 " + nome_usuario + ", Após receber a ajuda dos Universitários: \n pressione ENTER para voltar e responder \n")
+            else:
+                input("\n 🎤 Você não tem mais ajudas dos Universitários disponíveis! \n\n | ENTER | \n")
+            continue
+
+        elif pergunta_26_resposta_m == "D":
+            print("\n🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟")
+            print("🎤 INCRÍVEL! RESPOSTA ABSOLUTAMENTE CORRETA!!!")
+            print("🏆 PARABÉNS! VOCÊ ACABA DE GANHAR R$ 1.000.000,00! 🏆")
+            print("🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟")
+            Valor_Acumulado = 1000000.0
+            input(" | ENTER | \n")
+            break
+
+        elif pergunta_26_resposta_m in ["A", "B", "C", "E"]:
+            print("\n🎤 Resposta incorreta! Que pena, você perdeu tudo na última pergunta!")
+            print("\nO valor acumulado voltou para R$ 0.0")
+            print("\nObrigado por jogar o Show do Milhão, " + nome_usuario + "!")
+            input("\n| ENTER |")
+            exit()
+
+RESPOSTAS_PERGUNTA_26 (pergunta_26_resposta_m = "")
+
+
+
