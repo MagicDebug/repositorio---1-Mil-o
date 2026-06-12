@@ -6103,3 +6103,4 @@ elif Máteria_selecionada == "6":
 
             print("\n👋 Até a próxima!")
             break
+
