@@ -2008,7 +2008,7 @@ elif Máteria_selecionada == "4":
             resposta_bonus = resposta_bonus.upper()
 
             if resposta_bonus == "B":
-                print(input("\n 🎤 ✅ EXATA! PARABÉNS!!! ✅ \n VOCÊ GANHOU UM MILHÂO DE REAIS PARABENS!!! \n\n | ENTER | "))
+                print(input("\n 🎤 ✅ EXATA! PARABÉNS!!! ✅ \n VOCÊ GANHOU UM MILHÂO DE REAIS!!! \n\n | ENTER | "))
                 Valor_Acumulado = 1000000.0
                 break
 
@@ -5422,30 +5422,6 @@ elif Máteria_selecionada == "5":
         
 
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 elif Máteria_selecionada == "6":
 
     # =========================================
