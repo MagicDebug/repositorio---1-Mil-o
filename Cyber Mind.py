@@ -2099,8 +2099,6 @@ elif Máteria_selecionada == "4" :
     Ajuda_da_pessoas = 3
     Ajuda_dos_Universitarios = 5
 
-    nome_usuario = input("Antes de Iniciarmos Gostaria de Saber, qual seria seu nome? \n\n 👤 | DIGITE O SEU NOME E TECLE ENTER PARA CONTINUAR | \n ")
-
 
     print (input("🎤 Bem Vindo ao nosso programa Cyber Mind!!! \n\n 🎤Você selecionou a materia de História \n\n 🎤Vamos dar inicio ao primeiro Tema: Princípios da Revolução Francesa ao caráter burguês   \n\n  | TECLE ENTER PARA CONTINUAR | \n"))
 
@@ -2159,7 +2157,8 @@ elif Máteria_selecionada == "4" :
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a primeira pergunta e já tem 💵 1,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a segunda pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
 
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_2():
 
         global Ajuda_da_pessoas
@@ -2216,7 +2215,8 @@ elif Máteria_selecionada == "4" :
 
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a segunda pergunta e já tem 💵 2,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a terceira pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_3():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2266,7 +2266,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_3()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a terceira pergunta e já tem 💵 3,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a quarta pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_4():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2313,7 +2314,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_4()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a quarta pergunta e já tem 💵 4,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a quinta e ultima do primeiro bloco! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_5():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2370,7 +2372,8 @@ elif Máteria_selecionada == "4" :
     else:    print(input("\n 🎤 Você escolheu continuar, vamos para o para o segundo bloco. \n\n | TECLE ENTER PARA CONTINUAR | \n")) 
     print (input(" 🎤  O valor das perguntas vai aumentar para 10,000 reais cada pergunta \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Segundo Tema: Identificar interesses políticos, sociais e econômicos nas independências da América. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_6_bloco_2():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2418,7 +2421,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_6_bloco_2()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a sexta pergunta e já tem 💵 15,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a sétima pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_7_bloco_2():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2465,7 +2469,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_7_bloco_2()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a sétima pergunta e já tem 💵 25,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a oitava pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_8_bloco_2():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2512,7 +2517,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_8_bloco_2()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a oitava pergunta e já tem 💵 35,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a nona pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_9_bloco_2():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2560,7 +2566,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_9_bloco_2()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a nona pergunta e já tem 💵 45,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a décima pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_10_bloco_2():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2616,7 +2623,8 @@ elif Máteria_selecionada == "4" :
     else:    print(input("\n 🎤 Você escolheu continuar, vamos para o para o terceiro bloco. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤  O valor das perguntas vai aumentar para 20,000 reais cada pergunta \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Terceiro Tema:Cangaço. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_11_bloco_3():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2663,7 +2671,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_11_bloco_3()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a décima primeira pergunta e já tem 💵 75,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a décima segunda pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_12_bloco_3():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2710,7 +2719,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_12_bloco_3()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a décima segunda pergunta e já tem 💵 95,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a décima terceira pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_13_bloco_3():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2757,7 +2767,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_13_bloco_3()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a décima terceira pergunta e já tem 💵 115,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a décima quarta pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_14_bloco_3():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2804,7 +2815,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_14_bloco_3()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a décima quarta pergunta e já tem 💵 135,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a décima quinta pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_15_bloco_3():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2858,7 +2870,8 @@ elif Máteria_selecionada == "4" :
     else:    print(input("\n 🎤 Você escolheu continuar, vamos para o para o quarto bloco. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤  O valor das perguntas vai aumentar para 30,000 reais cada pergunta \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Quarto Tema: Contestado. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_16_bloco_4():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2905,7 +2918,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_16_bloco_4()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a décima sexta pergunta e já tem 💵 185,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a décima sétima pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_17_bloco_4():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2952,7 +2966,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_17_bloco_4()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a décima sétima pergunta e já tem 💵 215,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a décima oitava pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_18_bloco_4():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -2999,7 +3014,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_18_bloco_4()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a décima oitava pergunta e já tem 💵 245,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a décima nona pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_19_bloco_4():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -3046,7 +3062,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_19_bloco_4()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a décima nona pergunta e já tem 💵 275,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a vigésima pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_20_bloco_4():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -3100,7 +3117,8 @@ elif Máteria_selecionada == "4" :
     else:    print(input("\n 🎤 Você escolheu continuar, vamos para o para o quinto bloco. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤  O valor das perguntas vai aumentar para 40,000 reais cada pergunta \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Quinto Tema: Escravidão . \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_21_bloco_5():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -3148,6 +3166,8 @@ elif Máteria_selecionada == "4" :
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a vigésima primeira pergunta e já tem 💵 345,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
 
     print (input(" 🎤 Agora vamos para a vigésima segunda pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_22_bloco_5():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -3194,6 +3214,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_22_bloco_5()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a vigésima segunda pergunta e já tem 💵 385,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a vigésima terceira pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_23_bloco_5():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -3240,7 +3262,8 @@ elif Máteria_selecionada == "4" :
     RESPOSTAS_PERGUNTA_23_bloco_5()
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a vigésima terceira pergunta e já tem 💵 425,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
     print (input(" 🎤 Agora vamos para a vigésima quarta pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_24_bloco_5():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -3288,6 +3311,8 @@ elif Máteria_selecionada == "4" :
     print (input("\n 🎤 Parabéns " + nome_usuario + ", você acertou a vigésima quarta pergunta e já tem 💵 465,000 reais acumulados! \n\n | TECLE ENTER PARA CONTINUAR | \n"))
 
     print (input(" 🎤 Agora vamos para a vigésima quinta pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_25_bloco_5():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -3342,7 +3367,8 @@ elif Máteria_selecionada == "4" :
         exit()
     else:    print(input("\n 🎤 Você escolheu continuar, vamos para a última pergunta. \n\n | TECLE ENTER PARA CONTINUAR | \n"))
 
-
+    import os
+    os.system("cls")
     def RESPOSTAS_PERGUNTA_26_bloco_5():
         global Ajuda_da_pessoas
         global Ajuda_dos_Universitarios
@@ -7448,7 +7474,7 @@ elif Máteria_selecionada == "3":
 
 
     print (input("\n 🎤 " + nome_usuario + ", as Instruções do Jogo são as seguintes: \n  O Show será dividido em 5 temas do 😂 Mais Fácil até o, 🤬 Mais Difícil \n contendo 25 perguntas divididas para os diferentes 5 temas, podendo ter a ajuda da; \n\n 🥸  Plateia 3 vezes \n 🎓 Universitários 5 vezes \n\n  | ENTER | \n"))
-    print (input(" 🎤 Cada pergunta vale 💵 200,00 \n  A cada acerto o valor da próxima pergunta dobra, aumentando o resultado acumulado \n  Mas se você errar, o jogo acaba na hora! \n\n | ENTER | \n"))
+    print (input(" 🎤 Cada pergunta vale um agrande quantia de dinheiro R$💵 \n  A cada acerto o valor da próxima pergunta aumenta, aumentando o resultado acumulado \n  Mas se você errar, o jogo acaba na hora! \n\n | ENTER | \n"))
     print (input("\n 🎤 Seu Único Objetivo é responder todas as 25 Perguntas e tentar chegar ao 1 milhão \n\n  MAS ATENÇÃO!!! \n no fim das 25 perguntas você acertar tudo irá \n há uma Pergunta Bônus chamada \n\n 💀 ARRISCA TUDO 💀 \n\n  Pergunta na qual se você acertar leva seu 💵 Valor Acumulado ao Dobro🤑  \n  Mas se Errar perde todo 💵 Valor Acumulado 💀 \n\n | ENTER | \n"))
 
     import os
@@ -7487,10 +7513,10 @@ elif Máteria_selecionada == "3":
 
             if pergunta_1_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 100,00! \n\n Vamos prosseguir para a pergunta 2\n\n")
+                print("✅ Você ganhou R$ 1000,00! \n\n Vamos prosseguir para a pergunta 2\n\n")
                 input(" | ENTER | \n")
 
-                Valor_Acumulado = 100.0
+                Valor_Acumulado = 1000.0
                 break
         
             if pergunta_1_resposta_m in ["A", "B", "D", "E"]:
@@ -7537,9 +7563,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_2_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 100,00! \n\n Vamos prosseguir para a pergunta 3")
+                print("✅ Você ganhou R$ 1000,00! \n\n Vamos prosseguir para a pergunta 3")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 200.0
+                Valor_Acumulado = 2000.0
                 break
     
             if pergunta_2_resposta_m in ["A", "B", "D", "E"]:
@@ -7586,9 +7612,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_3_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 200,00! \n\n Vamos prosseguir para a pergunta 4")
+                print("✅ Você ganhou R$ 1000,00! \n\n Vamos prosseguir para a pergunta 4")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 400.0
+                Valor_Acumulado = 3000.0
                 break
 
             if pergunta_3_resposta_m in ["A", "B", "D", "E"]:     
@@ -7635,9 +7661,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_4_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 400,00! \n Vamos prosseguir para a pergunta 5")
+                print("✅ Você ganhou R$ 1000,00! \n Vamos prosseguir para a pergunta 5")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 800.0
+                Valor_Acumulado = 4000.0
                 break
 
             if pergunta_4_resposta_m in ["A", "B", "D", "E"]:
@@ -7683,9 +7709,9 @@ elif Máteria_selecionada == "3":
 
             if pergunta_5_resposta_m == "C":
                 print("\n🎤 Resposta correta!")
-                print("✅ Você ganhou R$ 800,00!")
+                print("✅ Você ganhou R$ 1000,00!")
                 input(" | ENTER | \n")
-                Valor_Acumulado = 1600.0
+                Valor_Acumulado = 5000.0
                 break
 
             if pergunta_5_resposta_m in ["A", "B", "D", "E"]:
@@ -7796,7 +7822,7 @@ elif Máteria_selecionada == "3":
                 print("\n🎤 Resposta incorreta! O jogo acabou! \n\n O valor acumulado foi de R$ " + str(Valor_Acumulado) + " \n\n Obrigado por jogar o Show do Milhão, " + nome_usuario + "! \n\n | ENTER | \n")
                 exit()
 
-    RESPOSTAS_PERGUNTA_7(pergunta_5_resposta_m = "")
+    RESPOSTAS_PERGUNTA_7(pergunta_7_resposta_m = "")
 
     def RESPOSTAS_PERGUNTA_8 (pergunta_8_resposta_m):
         global Ajuda_plateia
@@ -8686,8 +8712,3 @@ elif Máteria_selecionada == "3":
 
 
     
-
-
-
-
-
