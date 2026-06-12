@@ -750,3 +750,327 @@ print (input(" 🎤Agora vamos para o proximo bloco Agora as perguntas vão ser 
 
 
 
+
+import sys
+
+def ultradificil():
+    global Ajuda_d_plateia
+    global Ajuda_dos_Uni
+    while True: 
+            print("\n=== NÍVEL 5 -ULTRA DIFICIL  ===") 
+            print("Tema:Condutividade térmica")
+            print("1. A condutividade térmica de um material representa:") 
+            print("a) A facilidade com que o material conduz calor.") 
+            print("b.) A quantidade de calor armazenada pelo material.") 
+            print("c)A temperatura máxima suportada pelo material.") 
+            print("d)A massa específica do material.") 
+            print("e)A quantidade de energia necessária para aquecê-lo.") 
+        
+            ultra_1 = input("\nQual das alternativas está correta?\n| DIGITE [A/B/C/D/E] | [P] PLATEIA | [U] UNIVERSITÁRIOS |\n\n👤 ").strip().upper() 
+        
+            if ultra_1 == 'P': 
+                if Ajuda_d_plateia > 0: 
+                    Ajuda_d_plateia -= 1 
+                    input("\n🎤 Você pediu a ajuda da Plateia: \n| ENTER |") 
+                    print("🥸 Calor sensível serve justamente para mudar o termômetro! É a (A)!") 
+                    print("🥸 Com ccerteza a temperatura muda, alternativa (A)!\n") 
+                    continue 
+                else: 
+                    input("\n⚠️ Você não tem mais ajudas da Plateia! | ENTER |") 
+                    continue 
+            elif ultra_1 == 'U': 
+                if Ajuda_dos_Uni > 0: 
+                    Ajuda_dos_Uni -= 1 
+                    input("\n🎤 Você pediu a ajuda dos Universitários: \n| ENTER |") 
+                    print("🎓 O calor sensível provoca variação térmica no sistema sem alterar seu estado. Resposta (A).\n") 
+                    continue 
+                else: 
+                    input("\n⚠️ Você não tem mais ajudas dos Universitários! | ENTER |") 
+                    continue 
+            elif ultra_1 == 'A': 
+                print("\n✅ CORRETA! Parabéns, você ganhou 💵 340.000,00\n") 
+                return True 
+            else: 
+                print("\n❌ ERRADA! Você perdeu tudo e saiu com 💵 0,00") 
+                sys.exit()
+
+
+
+def ultradificil2():
+    global Ajuda_d_plateia
+    global Ajuda_dos_Uni
+    while True: 
+            print("\n=== NÍVEL 5 -ULTRA DIFICIL  ===") 
+            print("Tema:Condutividade térmica")
+            print("2.Uma barra metálica tem uma extremidade a 100°C e a outra a 20°C. Em relação ao fluxo de calor na barra, é correto afirmar que: ") 
+            print("a) O calor flui da extremidade quente para a fria.") 
+            print("b.) Não há transferência de calor porque ambas as temperaturas são positivas.") 
+            print("c)O calor flui da extremidade fria para a quente.") 
+            print("d)O fluxo de calor depende apenas do comprimento da barra.") 
+            print("e)O calor flui igualmente nos dois sentidos.") 
+        
+            ultra_2 = input("\nQual das alternativas está correta?\n| DIGITE [A/B/C/D/E] | [P] PLATEIA | [U] UNIVERSITÁRIOS |\n\n👤 ").strip().upper() 
+        
+            if ultra_2 == 'P': 
+                if Ajuda_d_plateia > 0: 
+                    Ajuda_d_plateia -= 1 
+                    input("\n🎤 Você pediu a ajuda da Plateia: \n| ENTER |") 
+                    print("🥸 Calor sensível serve justamente para mudar o termômetro! É a (A)!") 
+                    print("🥸 Com ccerteza a temperatura muda, alternativa (A)!\n") 
+                    continue 
+                else: 
+                    input("\n⚠️ Você não tem mais ajudas da Plateia! | ENTER |") 
+                    continue 
+            elif ultra_2 == 'U': 
+                if Ajuda_dos_Uni > 0: 
+                    Ajuda_dos_Uni -= 1 
+                    input("\n🎤 Você pediu a ajuda dos Universitários: \n| ENTER |") 
+                    print("🎓 O calor sensível provoca variação térmica no sistema sem alterar seu estado. Resposta (A).\n") 
+                    continue 
+                else: 
+                    input("\n⚠️ Você não tem mais ajudas dos Universitários! | ENTER |") 
+                    continue 
+            elif ultra_2 == 'A': 
+                print("\n✅ CORRETA! Parabéns, você ganhou 💵 380.000,00\n") 
+                return True 
+            else: 
+                print("\n❌ ERRADA! Você perdeu tudo e saiu com 💵 0,00") 
+                sys.exit()
+
+
+
+def ultradificil3():
+    global Ajuda_d_plateia
+    global Ajuda_dos_Uni
+
+    while True:
+        print("\n=== NÍVEL 5 - ULTRA DIFÍCIL ===")
+        print("Tema: Condutividade térmica")
+
+        print("3. Duas barras de mesmo material possuem o mesmo comprimento,")
+        print("mas a barra X tem área transversal duas vezes maior que a barra Y.")
+        print("Ambas estão submetidas à mesma diferença de temperatura.")
+        print("Qual afirmação é correta?\n")
+
+        print("a) A barra X conduzirá calor a uma taxa duas vezes maior que a barra Y.")
+        print("b) As duas barras conduzirão calor na mesma taxa.")
+        print("c) A barra Y conduzirá calor duas vezes mais rápido que a barra X.")
+        print("d) A área transversal não influencia a condução térmica.")
+        print("e) A condução térmica depende apenas da temperatura.")
+
+        ultra_3 = input(
+            "\nQual das alternativas está correta?\n"
+            "| DIGITE [A/B/C/D/E] | [P] PLATEIA | [U] UNIVERSITÁRIOS |\n\n👤 "
+        ).strip().upper()
+
+        if ultra_3 == 'P':
+            if Ajuda_d_plateia > 0:
+                Ajuda_d_plateia -= 1
+                input("\n🎤 Você pediu a ajuda da Plateia: \n| ENTER |")
+                print("🥸 Pela Lei de Fourier, quanto maior a área, maior a taxa de condução.")
+                print("🥸 Acho que a alternativa (A) está correta!\n")
+                continue
+            else:
+                input("\n⚠️ Você não tem mais ajudas da Plateia! | ENTER |")
+                continue
+
+        elif ultra_3 == 'U':
+            if Ajuda_dos_Uni > 0:
+                Ajuda_dos_Uni -= 1
+                input("\n🎤 Você pediu a ajuda dos Universitários: \n| ENTER |")
+                print("🎓 A taxa de condução é diretamente proporcional à área transversal.")
+                print("🎓 Portanto, a resposta correta é (A).\n")
+                continue
+            else:
+                input("\n⚠️ Você não tem mais ajudas dos Universitários! | ENTER |")
+                continue
+
+        elif ultra_3 == 'A':
+            print("\n✅ CORRETA! Parabéns, você ganhou 💵 20.000,00\n")
+            return True
+
+        else:
+            print("\n❌ ERRADA! Você perdeu tudo e saiu com 💵 0,00")
+            sys.exit()
+
+
+
+
+
+def ultradificil4():
+    global Ajuda_d_plateia
+    global Ajuda_dos_Uni
+
+    while True:
+        print("4. Materiais como lã de vidro e isopor são usados como isolantes térmicos porque:")
+        print("a) Possuem baixa condutividade térmica.")
+        print("b) Produzem calor.")
+        print("c) Aumentam a temperatura do ambiente.")
+        print("d) Possuem alta densidade.")
+        print("e) Refletem todo o calor incidente.")
+
+        ultra_4 = input(
+            "\nQual das alternativas está correta?\n"
+            "| DIGITE [A/B/C/D/E] | [P] PLATEIA | [U] UNIVERSITÁRIOS |\n\n👤 "
+        ).strip().upper()
+
+        if ultra_4 == 'P':
+            if Ajuda_d_plateia > 0:
+                Ajuda_d_plateia -= 1
+                input("\n🎤 Você pediu a ajuda da Plateia: \n| ENTER |")
+                print("🥸 Pela Lei de Fourier, quanto maior a área, maior a taxa de condução.")
+                print("🥸 Acho que a alternativa (A) está correta!\n")
+                continue
+            else:
+                input("\n⚠️ Você não tem mais ajudas da Plateia! | ENTER |")
+                continue
+
+        elif ultra_4 == 'U':
+            if Ajuda_dos_Uni > 0:
+                Ajuda_dos_Uni -= 1
+                input("\n🎤 Você pediu a ajuda dos Universitários: \n| ENTER |")
+                print("🎓 A taxa de condução é diretamente proporcional à área transversal.")
+                print("🎓 Portanto, a resposta correta é (A).\n")
+                continue
+            else:
+                input("\n⚠️ Você não tem mais ajudas dos Universitários! | ENTER |")
+                continue
+
+        elif ultra_4 == 'A':
+            print("\n✅ CORRETA! Parabéns, você ganhou 💵 20.000,00\n")
+            return True
+
+        else:
+            print("\n❌ ERRADA! Você perdeu tudo e saiu com 💵 0,00")
+            sys.exit()
+
+
+def ultradificil5():
+    global Ajuda_d_plateia
+    global Ajuda_dos_Uni
+
+
+    while True:
+        print("5. De acordo com a Lei de Fourier, a taxa de transferência de calor por condução aumenta quando:")
+        print("a) A diferença de temperatura entre as extremidades aumenta.")
+        print("b) A espessura do material aumenta.")
+        print("c) A área de transferência diminui.")
+        print("d) A condutividade térmica diminui.")
+        print("e) O material se torna um isolante.")
+
+        ultra_5 = input(
+            "\nQual das alternativas está correta?\n"
+            "| DIGITE [A/B/C/D/E] | [P] PLATEIA | [U] UNIVERSITÁRIOS |\n\n👤 "
+        ).strip().upper()
+
+        if ultra_5 == 'P':
+            if Ajuda_d_plateia > 0:
+                Ajuda_d_plateia -= 1
+                input("\n🎤 Você pediu a ajuda da Plateia: \n| ENTER |")
+                print("🥸 Pela Lei de Fourier, quanto maior a área, maior a taxa de condução.")
+                print("🥸 Acho que a alternativa (A) está correta!\n")
+                continue
+            else:
+                input("\n⚠️ Você não tem mais ajudas da Plateia! | ENTER |")
+                continue
+
+        elif ultra_5 == 'U':
+            if Ajuda_dos_Uni > 0:
+                Ajuda_dos_Uni -= 1
+                input("\n🎤 Você pediu a ajuda dos Universitários: \n| ENTER |")
+                print("🎓 A taxa de condução é diretamente proporcional à área transversal.")
+                print("🎓 Portanto, a resposta correta é (A).\n")
+                continue
+            else:
+                input("\n⚠️ Você não tem mais ajudas dos Universitários! | ENTER |")
+                continue
+
+        elif ultra_5 == 'A':
+            print("\n✅ CORRETA! Parabéns, você ganhou 💵 20.000,00\n")
+            return True
+
+        else:
+            print("\n❌ ERRADA! Você perdeu tudo e saiu com 💵 0,00")
+            sys.exit()
+
+
+
+def RESPOSTAS_ULT_26():
+    global Ajuda_d_plateia
+    global Ajuda_dos_Uni
+    global nome_usuario
+
+    print("\n🚨 SEJA BEM-VINDO À PERGUNTA FINAL DO SHOW DO MILHÃO! 🚨")
+    print(f"🎤 {nome_usuario}, as luzes do estúdio se apagam agora.")
+    print("Você está de frente com a pergunta de UM MILHÃO DE REAIS.")
+    print("\n-> Se parar agora [P]: leva R$ 500.000,00")
+    print("-> Se arriscar [A]: joga tudo pela última pergunta!")
+
+    confirmacao = input("\n[P] PARAR ou [A] ARRISCAR? 👤 ").strip().upper()
+
+    if confirmacao != "A":
+        print(f"\n🏆 PARABÉNS {nome_usuario.upper()}! Você sai com R$ 500.000,00!")
+        sys.exit()
+
+    input("\n🎤 TENSÃO MÁXIMA! ENTER PARA A PERGUNTA FINAL...")
+
+    while True:
+        print("\n======👑 PERGUNTA FINAL - CONDUÇÃO TÉRMICA 👑======")
+        print("Tema: Lei de Fourier / Condução térmica")
+
+        print("\nDuas barras de mesmo material possuem o mesmo comprimento,")
+        print("mas a barra X tem área transversal duas vezes maior que a barra Y.")
+        print("Ambas estão submetidas à mesma diferença de temperatura.")
+        print("De acordo com a Lei de Fourier, qual afirmação é correta?\n")
+
+        print("A) A barra Y conduz calor mais rapidamente que a barra X.")
+        print("B) As duas barras conduzem calor na mesma taxa.")
+        print("C) A área transversal não influencia a condução térmica.")
+        print("D) A condução térmica depende apenas da temperatura.")
+        print("E) A barra X conduz calor a uma taxa duas vezes maior que a barra Y.")
+
+        ult_26 = input("\nRESPOSTA [A/B/C/D/E] | [P] PLATEIA | [U] UNIVERSITÁRIOS 👤 ").strip().upper()
+
+        if ult_26 == "P":
+            if Ajuda_d_plateia > 0:
+                Ajuda_d_plateia -= 1
+                input("\n🎤 Plateia consultada... ENTER")
+                print("🥸 A maioria dos votos indica a alternativa (E)!")
+                print("🥸 Alguns ficaram em dúvida, mas a tendência é (E)!\n")
+                continue
+            else:
+                input("\n⚠️ Sem ajuda da plateia! ENTER")
+                continue
+
+        elif ult_26 == "U":
+            if Ajuda_dos_Uni > 0:
+                Ajuda_dos_Uni -= 1
+                input("\n🎤 Universitários consultados... ENTER")
+                print("🎓 Pela Lei de Fourier, o fluxo é proporcional à área.")
+                print("🎓 Como X tem o dobro da área, a resposta correta é (E).\n")
+                continue
+            else:
+                input("\n⚠️ Sem ajuda dos universitários! ENTER")
+                continue
+
+        elif ult_26 == "E":
+            print("\n🎤 Analisando resposta...")
+            print("🎉🎉 CORRETO!!! 🎉🎉")
+            print(f"🏆 {nome_usuario} GANHOU R$ 1.000.000,00!!! 🏆")
+            input("\nENTER PARA FINALIZAR O JOGO")
+            break
+
+        else:
+            print("\n❌ ERRADO! Você perdeu tudo e saiu com R$ 0,00")
+            sys.exit()
+
+
+ultradificil()
+ultradificil2()
+ultradificil3()
+ultradificil4()
+ultradificil5()
+RESPOSTAS_ULT_26()
+
+
+
