@@ -595,7 +595,7 @@ RESPOSTAS_PERGUNTA_12(pergunta_12_resposta_m = "")
 #PARTE DO LEO
 #===================================================
 
-input("\n Impressionante, " + nome_usuario + "! Você concluiu a Pergunta 10, demais!!! \n\n O valor atual acumulado é de R$ " + str(Valor_Acumulado) + " \n\n Muito cuidado para não perde-lo! \n\n Vamos continuar para a Pergunta 16, onde iniciamos o nível Dificil!!! \n\n | ENTER | \n")
+input("\n Impressionante, " + nome_usuario + "! Você concluiu a Pergunta 20, demais!!! \n\n O valor atual acumulado é de R$ " + str(Valor_Acumulado) + " \n\n Muito cuidado para não perde-lo! \n\n Vamos continuar para a Pergunta 16, onde iniciamos o nível Dificil!!! \n Tema: Equação do 2º grau (análise do Δ) \n\n | ENTER | \n")
 
 def RESPOSTAS_PERGUNTA_16 (pergunta_16_resposta_m):
 
@@ -827,4 +827,5 @@ def RESPOSTAS_PERGUNTA_20 (pergunta_20_resposta_m = ""):
 
 RESPOSTAS_PERGUNTA_20 (pergunta_20_resposta_m = "")
 
-input("\n Impressionante, " + nome_usuario + "! Você concluiu a Pergunta 20, demais!!! \n\n O valor atual acumulado é de R$ " + str(Valor_Acumulado) + " \n\n Muito cuidado para não perde-lo! \n\n Vamos continuar para a Pergunta 16, onde iniciamos o nível Dificil!!! \n Tema: Equação do 2º grau (análise do Δ) \n\n | ENTER | \n")
+# PARTE DO LUIZZ
+
