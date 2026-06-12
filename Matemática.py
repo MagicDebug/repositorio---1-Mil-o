@@ -842,7 +842,7 @@ def RESPOSTAS_PERGUNTA_21 (pergunta_21_resposta_m = ""):
         if pergunta_21_resposta_m == "P":
             if Ajuda_plateia > 0:
                 Ajuda_plateia -= 1
-                input("\n 🎤 Você pediu a ajuda da Plateia: \n Eles se lembram vagamente das aulas de álgebra! \n\n | ENTER | ")
+                input("\n 🎤 Você pediu a ajuda da Plateia: \n Eles se lembram  das aulas de álgebra! \n\n | ENTER | ")
                 print(" 🥸  Acho que é a (C)! \n 🥸  Com certeza é a (C)! \n 🥸  Fiquei em dúvida com a (A)!\n")
                 input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
             else:
@@ -981,7 +981,7 @@ def RESPOSTAS_PERGUNTA_24 (pergunta_24_resposta_m = ""):
             if Ajuda_plateia > 0:
                 Ajuda_plateia -= 1
                 input("\n 🎤 Você pediu a ajuda da Plateia: \n\n | ENTER | ")
-                print(" 🥸  Essa é fácil, 3 vezes 3 vezes 3... \n 🥸  É a (B), dá 4! \n 🥸  Voto na (B)!\n")
+                print(" 🥸  Essa é fácil, \n 🥸  é a (B), dá 4! \n 🥸  Voto na (B)!\n")
                 input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
             else:
                 input("\n 🎤 Você não tem mais ajudas da Plateia disponíveis! \n\n | ENTER | \n")
@@ -1072,8 +1072,8 @@ def RESPOSTAS_PERGUNTA_26 (pergunta_26_resposta_m = ""):
         if pergunta_26_resposta_m == "P":
             if Ajuda_plateia > 0:
                 Ajuda_plateia -= 1
-                input("\n 🎤 Você pediu a ajuda da Plateia: \n Silêncio total no estúdio... Ninguém sabe resolver de cabeça! \n\n | ENTER | ")
-                print(" 🥸  Eita, essa complicou... chuta a (D). \n 🥸  Acho que é a (B). \n Instável... melhor pedir universitários!\n")
+                input("\n 🎤 Você pediu a ajuda da Plateia: \n  Ninguém sabe resolver de cabeça! \n\n | ENTER | ")
+                print(" 🥸  Eita, chuta a (D). \n 🥸  Acho que é a (B). \n Instável... melhor pedir universitários!\n")
                 input(" 🎤 " + nome_usuario + ", Após receber a ajuda da Plateia: \n pressione ENTER para voltar e responder \n")
             else:
                 input("\n 🎤 Você não tem mais ajudas da Plateia disponíveis! \n\n | ENTER | \n")
@@ -1090,10 +1090,9 @@ def RESPOSTAS_PERGUNTA_26 (pergunta_26_resposta_m = ""):
             continue
 
         elif pergunta_26_resposta_m == "D":
-            print("\n🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟")
+            
             print("🎤 INCRÍVEL! RESPOSTA ABSOLUTAMENTE CORRETA!!!")
             print("🏆 PARABÉNS! VOCÊ ACABA DE GANHAR R$ 1.000.000,00! 🏆")
-            print("🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟 🌟")
             Valor_Acumulado = 1000000.0
             input(" | ENTER | \n")
             break
