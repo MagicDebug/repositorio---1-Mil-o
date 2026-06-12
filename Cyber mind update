@@ -1906,43 +1906,43 @@ if Máteria_selecionada == "1":
             global Valor_Acumulado
 
             while True:
-                resposta_bonus = (input(" 💀 ARRISCA TUDO 💀 \n Pergunta 26: \n\n 🎤 [Texto 1] \n A inteligência artificial automatiza tarefas e amplia a produtividade, liberando o ser humano para o pensamento estratégico. \n\n 🎤 [Texto 2] \n Ao assumir as escolhas estratégicas com base em dados históricos, os algoritmos moldam as decisões humanas de forma imperceptível. \n\n Confrontando os dois textos, conclui-se que o Texto 2:❔ \n\n 🎤 Alternativa (A) Corrobora a tese do Texto 1 sobre a total liberdade humana \n 🎤 Alternativa (B) Problematiza o Texto 1 ao sugerir uma perda sutil de autonomia \n 🎤 Alternativa (C) Limita-se a descrever o funcionamento técnico de um algoritmo \n 🎤 Alternativa (D) Desmente o Texto 1 ao provar que a produtividade diminuiu \n 🎤 Alternativa (E) Trata de um assunto completamente diferente do Texto 1 \n\n | SE VOCÊ ACERTAR: SEU PRÊMIO DOBRA PARA 💵 6,710,886,400,00!!! 🤑 | \n | SE VOCÊ ERRAR: PERDE TUDO E SAI COM R$ 0.00! 💀 | \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n\n | ENTER | \n\n 👤 "))
+                resposta_bonus = (input(" 💀 ARRISCA TUDO 💀 \n\n 🎤  [ O Barroco explorava conflitos  entre corpo e alma por meio de antíteses e paradoxos \n O Arcadismo procurava a simplicidade, a razão e a valorização da natureza em ambos os movimentos Porém \na linguagem reflete visões de mundo influenciadas pelo contexto histórico de cada época. ] \n\n Com base nesse trecho, qual característica diferencia diretamente o Arcadismo do Barroco:❔ \n\n 🎤 Alternativa (A) Religiosidade \n 🎤 Alternativa (B) Nacionalismo \n 🎤 Alternativa (C) Dualismo \n 🎤 Alternativa (D) Bucolismo \n 🎤 Alternativa (E) Conceptismo \n\n | SE VOCÊ ACERTAR: VOCÊ LEVA SEU VALOR ACUMULADO 💵 1,000,000,00!!! 🤑 | \n | SE VOCÊ ERRAR: PERDE TUDO E SAI COM R$ 0.00! 💀 | \n\n | PARA RESPONDER DIGITE [A/B/C/D/E] | \n\n | ENTER | \n\n 👤 "))
 
                 resposta_bonus = resposta_bonus.upper()
 
                 if resposta_bonus == "A":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (A), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ARRISCOU TUDO E PERDEU!!! O jogo acabou na última linha! 💀  😂 \n\n | ENTER | \n"))
-                    Valor_Acumulado = 0.0
-                    exit() 
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Religiosidade), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ACABA DE PERDER TODO O SEU VALOR ACUMULADO!!! \n você conseguiu perder seus 💵 R$ 1,000.000,00 🫵  😂 \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0 
+                    break
 
-                elif resposta_bonus == "B":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (B), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ✅ EXATA! PARABÉNS!!! ✅ \n VOCÊ DOBROU SEU PRÊMIO E SE TORNOU O MAIOR CAMPEÃO DO SHOW DO MILHÃO!!! 🤑 \n Você acaba de receber: 💵 R$ 6.710.886.400,00!!! \n\n | ENTER | \n"))
-                    Valor_Acumulado = 6710886400.0
+                elif resposta_bonus == "D":
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Bucolismo), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ✅ EXATA! PARABÉNS!!! ✅ \n VOCÊ SE TORNOU O MAIOR CAMPEÃO DO CYBER MIND!!! 🤑 \n Você acaba de levar o seu valor: 💵 R$ 1,000.000,00!!! \n\n | ENTER | \n"))
+                    Valor_Acumulado = 1000000
                     break
 
                 elif resposta_bonus == "C":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (C), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ARRISCOU TUDO E PERDEU!!! O jogo acabou na última linha! 💀  😂 \n\n | ENTER | \n"))
-                    Valor_Acumulado = 0.0
-                    exit() 
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Dualismo), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ACABA DE PERDER TODO O SEU VALOR ACUMULADO!!! \n você conseguiu perder seus 💵 R$ 1,000.000,00 🫵  😂 \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0
+                    break
 
-                elif resposta_bonus == "D":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (D), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ARRISCOU TUDO E PERDEU!!! O jogo acabou na última linha! 💀  😂 \n\n | ENTER | \n"))
-                    Valor_Acumulado = 0.0
-                    exit() 
+                elif resposta_bonus == "B":
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Nacionalismo), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ACABA DE PERDER TODO O SEU VALOR ACUMULADO!!! \n você conseguiu perder seus 💵 R$ 1,000.000,00 🫵  😂 \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0
+                    break
 
                 elif resposta_bonus == "E":
-                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (E), sua resposta está eee... \n\n | ENTER | "))
-                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ARRISCOU TUDO E PERDEU!!! O jogo acabou na última linha! 💀  😂 \n\n | ENTER | \n"))
-                    Valor_Acumulado = 0.0
-                    exit() 
+                    print (input("\n 🎤 " + nome_usuario + ", Você acha que a resposta é a (Conceptismo), sua resposta está eee... \n\n | ENTER | "))
+                    print (input(" 🎤 ❌ !!!ERRADA!!! ❌ \n VOCÊ ACABA DE PERDER TODO O SEU VALOR ACUMULADO!!! \n você conseguiu perder seus 💵 R$ 1,000.000,00 🫵  😂 \n\n | ENTER | \n"))
+                    Valor_Acumulado = 0
+                    break
 
                     PERGUNTA_26_ARRISCA_TUDO_(resposta_bonus = "")
 
-                    print (input(" 🎤 " + nome_usuario + ", Obrigado por jogar e testar nosso primeiro show \n 🎤 Gostaria de dizer no lugar do criador do meu papai, responsavel por criar o codigo deste Show, que foi um trabalho de muita dedicação dele. \n\n | ENTER | \n"))
+                    print (input(" 🤖 " + nome_usuario + ", Obrigado por jogar e testar nosso primeiro show \n Gostaria de dizer no lugar do meu papai o leonardo, que agadeço por jogar o nosso grande jogo do \n 🤖 CYBER MIND!!! 🤖 \n\n | ENTER | \n"))
 
 elif Máteria_selecionada == "5" :
     input("\n 🤖 MATERIA DE GEOGRAFIA SELECIONADA: \n\n | TECLA [ ENTER ] PARA PROSSEGUIR | \n")
